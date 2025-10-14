@@ -238,6 +238,10 @@ export default defineConfig({
   ssgOptions: {
     formatting: 'minify',
   },
+
+  server: {
+    port: 3000, // Altere para a porta desejada
+  },
 })
 
 const ogSVg = fs.readFileSync('./scripts/og-template.svg', 'utf-8')
