@@ -1,24 +1,65 @@
 ---
-title: CPU Profiling Nuxt
+title: REFERÊNCIAS BIBLIOGRÁFICAS
 date: 2024-12-31T16:00:00Z
 lang: en
 duration: 2min
 type: note
 ---
 
-If you want to debug the bundling performance of your Nuxt app to generate CPU profiles.
+## Essas são as referencais completas, acesse o trabalho completo clicando aqui.
 
-Node.js provides a built-in [`--cpu-prof`](https://nodejs.org/api/cli.html#--cpu-prof) flag that allows you to generate CPU profiles. However you can't directly pass it in your `nuxi` command, you have to use it with `node` directly.
+BOURDIEU, Pierre. \_\_La Distinction\_\_. Paris: Minuit, 1979.
 
-Instead of running `nuxi dev`, you can run `node` with the direct path to the CLI in `node_modules`:
+**\_\_\_\_**. _O Poder Simbólico_. Lisboa: Difel, 1989.
 
-```bash
-# nuxi dev
-node --cpu-prof ./node_modules/nuxi/bin/nuxi.mjs dev --fork=false
-```
+DUMONT, Louis. _O individualismo: uma perspectiva antropológica da ideologia moderna_.
+Rio de Janeiro: Rocco, 1993.
 
-Note that `--fork=false` is important as by [default `nuxi` will start the Nuxt process in a forked process](https://github.com/nuxt/cli/blob/a433fbcebda8cb87d7c0c8199137877b669e1c31/src/commands/dev.ts#L69-L75) which will make the CPU profile not working.
+GLUCKMAN, M. _Politics, law and ritual in tribal society_. Chicago: Aldine, 1968.
 
-> The simliar technique can be applied to other CLI tools that are not directly using `node` to start the process.
+GOLDMAN, M. “Uma categoria do pensamento antropológico: a noção de pessoa”.
+_Revista de Antropologia_. São Paulo, v. 39, n. 1, 1996, p. 83–109.
 
-After killing your Nuxt process, you will find two `CPU.***.cpuprofile` files generated in your working directory. I recommend using [CPUpro](https://discoveryjs.github.io/cpupro/) to visualize the profile. If you are using VS Code, I also created [an extension](https://marketplace.visualstudio.com/items?itemName=antfu.cpupro) for you to directly open the `.cpuprofile` file in VS Code easily.
+HAMMERSLEY, Martin; ATKINSON, Paul. _Ethnography: principles in practice_.
+London and New York: Routledge, 1995.
+
+JACOBSON, David. _Reading Ethnography_.
+Nova York: State University of New York Press, 1991.
+
+LEACH, Edmund Ronald. _Aspects of caste in South India, Ceylon and north-west Pakistan_.
+Cambridge, UK: University Press, 1960.
+
+MAUSS, Marcel. _Sociologia e antropologia_. São Paulo: Cosac & Naify, 2003.
+
+MOSKO, Mark. “Partible penitents: dividual personhood and Christian practice in Melanesia and the West”.
+_Journal of the Royal Anthropological Institute_, 16(NS): 215–240, 2010.
+
+REESINK, Mísia. _Les passages obligatoires: cosmologie catholique et mort dans le quartier de Casa Amarela, à Recife (Pernambuco-Brésil)_.
+Thèse de Doctorat, EHESS-Paris, 2003.
+
+**\_\_\_\_**. “Quando lembrar é amar: tempo, espaço, memória e saudade nos ritos fúnebres católicos”.
+_Etnográfica_ [Online], vol. 16 (2), 2012.
+
+**\_\_\_\_**. “La Personne Catholique. Comment des catholiques brésiliens pensent l'être humain”.
+_Vibrant_ (Florianópolis), v. 11, p. 155–184, 2014.
+
+**\_\_\_\_**. “Mortes morridas e mortes matadas, ou a banalização do mal”.
+Trabalho apresentado no _II Seminários do Devir_, Recife, UFPE, 2020.
+
+SAHLINS, M. _Sociedades tribais_. Rio de Janeiro: J. Zahar, 1983.
+
+STRATHERN, Marilyn. _Property, substance, and effect: anthropological essays on persons and things_.
+London: The Athlone Press, 1999.
+
+SWAAN, A. “Widening Circles of Disidentification: On the psycho and sociogenesis of the hatred of distant strangers: Reflections on Rwanda”.
+_Theory, Culture and Society_, 14(2), 1997, pp. 105–122.
+
+**\_\_\_\_**. _Bakens in Niemandsland: opstellen op massaal geweld_. Amsterdam: Bert Bakker, 2007.
+
+TURNER, V. _O processo ritual: estrutura e anti-estrutura_. Petrópolis: Vozes, 1974 [1969].
+
+**\_\_\_\_**. _Schism and continuity in an African society_. Manchester: Manchester University Press, 1996.
+
+VELHO, Gilberto. _A utopia urbana: um estudo de antropologia social_. Rio de Janeiro: J. Zahar, 2002.
+
+WHYTE, W. F. _Sociedade de esquina_. Rio de Janeiro: Zahar, 2005.

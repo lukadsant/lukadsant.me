@@ -35,36 +35,26 @@ const { y: scroll } = useWindowScroll()
           <div i-ri-article-line md:hidden />
         </RouterLink>
         <RouterLink to="/projects" title="Projects">
-          <span class="lt-md:hidden">Projects</span>
+          <span class="lt-md:hidden">Projetos</span>
           <div i-ri-lightbulb-line class="md:hidden" />
         </RouterLink>
         <RouterLink to="/talks" class="lt-md:hidden" title="Talks">
-          Talks
+          Apresentações
         </RouterLink>
-        <RouterLink to="/sponsors-list" title="Sponsors">
-          <span class="lt-md:hidden">Sponsors</span>
-          <div i-ri-heart-line class="md:hidden" />
-        </RouterLink>
-        <RouterLink to="/podcasts" class="lt-md:hidden" title="Podcasts">
-          <div i-ri-mic-line />
-        </RouterLink>
-        <RouterLink to="/photos" title="Photos">
+        <!-- <RouterLink to="/photos" title="Photos">
           <div i-ri-camera-3-line />
-        </RouterLink>
-        <RouterLink to="/demos" title="Demos">
-          <div i-ri-screenshot-line />
+        </RouterLink> -->
+        <RouterLink to="/demos" title="Certificações">
+          <div i-ri-graduation-cap-line />
         </RouterLink>
         <!-- <RouterLink to="/chat" title="Let's Chat">
           <div i-ri-chat-1-line />
         </RouterLink> -->
-        <a href="https://bsky.app/profile/antfu.me" target="_blank" title="Bluesky" class="lt-md:hidden">
-          <div i-ri-bluesky-line />
+        <a href="http://lattes.cnpq.br/6059128932814842" target="_blank" title="Lattes" class="lt-md:hidden">
+          <div i-simple-icons-discourse />
         </a>
-        <a href="https://github.com/antfu" target="_blank" title="GitHub" class="lt-md:hidden">
-          <div i-uil-github-alt />
-        </a>
-        <a href="/feed.xml" target="_blank" title="RSS" class="lt-md:hidden">
-          <div i-la-rss-square style="font-size:1.25rem; margin: 0 -0.125rem;" />
+        <a href="https://www.linkedin.com/in/acaciatavares/" target="_blank" title="LinkedIn" class="lt-md:hidden">
+          <div i-ri-linkedin-box-fill />
         </a>
         <ToggleTheme />
       </div>

@@ -53,5 +53,6 @@
       "scheme": "file",
       "pattern": "pages/posts/sponsorship-forwarding.md"
     }
-  ]
+  ],
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }

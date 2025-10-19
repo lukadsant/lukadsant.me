@@ -32,94 +32,95 @@ declare module 'vue-router/auto-routes' {
     '/photos': RouteRecordInfo<'/photos', '/photos', Record<never, never>, Record<never, never>>,
     '/podcasts': RouteRecordInfo<'/podcasts', '/podcasts', Record<never, never>, Record<never, never>>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
-    '/posts/about-yak-shaving': RouteRecordInfo<'/posts/about-yak-shaving', '/posts/about-yak-shaving', Record<never, never>, Record<never, never>>,
-    '/posts/about-yak-shaving-zh': RouteRecordInfo<'/posts/about-yak-shaving-zh', '/posts/about-yak-shaving-zh', Record<never, never>, Record<never, never>>,
-    '/posts/ai-qrcode': RouteRecordInfo<'/posts/ai-qrcode', '/posts/ai-qrcode', Record<never, never>, Record<never, never>>,
-    '/posts/ai-qrcode-101': RouteRecordInfo<'/posts/ai-qrcode-101', '/posts/ai-qrcode-101', Record<never, never>, Record<never, never>>,
-    '/posts/ai-qrcode-refine': RouteRecordInfo<'/posts/ai-qrcode-refine', '/posts/ai-qrcode-refine', Record<never, never>, Record<never, never>>,
-    '/posts/animated-svg-logo': RouteRecordInfo<'/posts/animated-svg-logo', '/posts/animated-svg-logo', Record<never, never>, Record<never, never>>,
-    '/posts/async-sync-in-between': RouteRecordInfo<'/posts/async-sync-in-between', '/posts/async-sync-in-between', Record<never, never>, Record<never, never>>,
-    '/posts/async-with-composition-api': RouteRecordInfo<'/posts/async-with-composition-api', '/posts/async-with-composition-api', Record<never, never>, Record<never, never>>,
-    '/posts/binfe-2020-zh': RouteRecordInfo<'/posts/binfe-2020-zh', '/posts/binfe-2020-zh', Record<never, never>, Record<never, never>>,
-    '/posts/bonjour-paris': RouteRecordInfo<'/posts/bonjour-paris', '/posts/bonjour-paris', Record<never, never>, Record<never, never>>,
-    '/posts/break-lines-in-js': RouteRecordInfo<'/posts/break-lines-in-js', '/posts/break-lines-in-js', Record<never, never>, Record<never, never>>,
-    '/posts/categorize-deps': RouteRecordInfo<'/posts/categorize-deps', '/posts/categorize-deps', Record<never, never>, Record<never, never>>,
-    '/posts/color-scheme-for-vscode-ext': RouteRecordInfo<'/posts/color-scheme-for-vscode-ext', '/posts/color-scheme-for-vscode-ext', Record<never, never>, Record<never, never>>,
-    '/posts/composable-vue-vueconf-china-2021': RouteRecordInfo<'/posts/composable-vue-vueconf-china-2021', '/posts/composable-vue-vueconf-china-2021', Record<never, never>, Record<never, never>>,
-    '/posts/composable-vue-vueday-2021': RouteRecordInfo<'/posts/composable-vue-vueday-2021', '/posts/composable-vue-vueday-2021', Record<never, never>, Record<never, never>>,
-    '/posts/destructuring-with-object-or-array': RouteRecordInfo<'/posts/destructuring-with-object-or-array', '/posts/destructuring-with-object-or-array', Record<never, never>, Record<never, never>>,
-    '/posts/dev-ssr-on-nuxt': RouteRecordInfo<'/posts/dev-ssr-on-nuxt', '/posts/dev-ssr-on-nuxt', Record<never, never>, Record<never, never>>,
-    '/posts/domain-email': RouteRecordInfo<'/posts/domain-email', '/posts/domain-email', Record<never, never>, Record<never, never>>,
-    '/posts/epoch-semver': RouteRecordInfo<'/posts/epoch-semver', '/posts/epoch-semver', Record<never, never>, Record<never, never>>,
-    '/posts/eslint-config-inspector': RouteRecordInfo<'/posts/eslint-config-inspector', '/posts/eslint-config-inspector', Record<never, never>, Record<never, never>>,
-    '/posts/evolution-of-shiki-v1': RouteRecordInfo<'/posts/evolution-of-shiki-v1', '/posts/evolution-of-shiki-v1', Record<never, never>, Record<never, never>>,
-    '/posts/get-package-root': RouteRecordInfo<'/posts/get-package-root', '/posts/get-package-root', Record<never, never>, Record<never, never>>,
-    '/posts/github-alerts': RouteRecordInfo<'/posts/github-alerts', '/posts/github-alerts', Record<never, never>, Record<never, never>>,
-    '/posts/github-co-authors': RouteRecordInfo<'/posts/github-co-authors', '/posts/github-co-authors', Record<never, never>, Record<never, never>>,
-    '/posts/hello-tokyo': RouteRecordInfo<'/posts/hello-tokyo', '/posts/hello-tokyo', Record<never, never>, Record<never, never>>,
-    '/posts/icons-in-pure-css': RouteRecordInfo<'/posts/icons-in-pure-css', '/posts/icons-in-pure-css', Record<never, never>, Record<never, never>>,
-    '/posts/icons-in-pure-css-zh': RouteRecordInfo<'/posts/icons-in-pure-css-zh', '/posts/icons-in-pure-css-zh', Record<never, never>, Record<never, never>>,
-    '/posts/introducing-nuxt-devtools': RouteRecordInfo<'/posts/introducing-nuxt-devtools', '/posts/introducing-nuxt-devtools', Record<never, never>, Record<never, never>>,
-    '/posts/introduction-to-vitest-vue-nation-2022': RouteRecordInfo<'/posts/introduction-to-vitest-vue-nation-2022', '/posts/introduction-to-vitest-vue-nation-2022', Record<never, never>, Record<never, never>>,
-    '/posts/isomorphic-dirname': RouteRecordInfo<'/posts/isomorphic-dirname', '/posts/isomorphic-dirname', Record<never, never>, Record<never, never>>,
-    '/posts/journey-with-icons': RouteRecordInfo<'/posts/journey-with-icons', '/posts/journey-with-icons', Record<never, never>, Record<never, never>>,
-    '/posts/journey-with-icons-continues': RouteRecordInfo<'/posts/journey-with-icons-continues', '/posts/journey-with-icons-continues', Record<never, never>, Record<never, never>>,
-    '/posts/make-libraries-working-with-vue-2-and-3': RouteRecordInfo<'/posts/make-libraries-working-with-vue-2-and-3', '/posts/make-libraries-working-with-vue-2-and-3', Record<never, never>, Record<never, never>>,
-    '/posts/manage-github-notifications-2023': RouteRecordInfo<'/posts/manage-github-notifications-2023', '/posts/manage-github-notifications-2023', Record<never, never>, Record<never, never>>,
-    '/posts/match-chinese-characters': RouteRecordInfo<'/posts/match-chinese-characters', '/posts/match-chinese-characters', Record<never, never>, Record<never, never>>,
-    '/posts/match-quotes-in-pairs': RouteRecordInfo<'/posts/match-quotes-in-pairs', '/posts/match-quotes-in-pairs', Record<never, never>, Record<never, never>>,
-    '/posts/mental-health-oss': RouteRecordInfo<'/posts/mental-health-oss', '/posts/mental-health-oss', Record<never, never>, Record<never, never>>,
-    '/posts/mental-health-oss-zh': RouteRecordInfo<'/posts/mental-health-oss-zh', '/posts/mental-health-oss-zh', Record<never, never>, Record<never, never>>,
-    '/posts/move-on-to-esm-only': RouteRecordInfo<'/posts/move-on-to-esm-only', '/posts/move-on-to-esm-only', Record<never, never>, Record<never, never>>,
-    '/posts/netlify-redirects': RouteRecordInfo<'/posts/netlify-redirects', '/posts/netlify-redirects', Record<never, never>, Record<never, never>>,
-    '/posts/new-house': RouteRecordInfo<'/posts/new-house', '/posts/new-house', Record<never, never>, Record<never, never>>,
-    '/posts/new-ways-to-vue-london-2021': RouteRecordInfo<'/posts/new-ways-to-vue-london-2021', '/posts/new-ways-to-vue-london-2021', Record<never, never>, Record<never, never>>,
-    '/posts/new-ways-to-vue-taiwan-2021': RouteRecordInfo<'/posts/new-ways-to-vue-taiwan-2021', '/posts/new-ways-to-vue-taiwan-2021', Record<never, never>, Record<never, never>>,
-    '/posts/now-and-future-devtools-nuxt-nation-2023': RouteRecordInfo<'/posts/now-and-future-devtools-nuxt-nation-2023', '/posts/now-and-future-devtools-nuxt-nation-2023', Record<never, never>, Record<never, never>>,
-    '/posts/npm-binary-mirrors': RouteRecordInfo<'/posts/npm-binary-mirrors', '/posts/npm-binary-mirrors', Record<never, never>, Record<never, never>>,
     '/posts/nuxt-cpuprofile': RouteRecordInfo<'/posts/nuxt-cpuprofile', '/posts/nuxt-cpuprofile', Record<never, never>, Record<never, never>>,
-    '/posts/nuxt-devtools-v1': RouteRecordInfo<'/posts/nuxt-devtools-v1', '/posts/nuxt-devtools-v1', Record<never, never>, Record<never, never>>,
-    '/posts/nuxt-dx-2023': RouteRecordInfo<'/posts/nuxt-dx-2023', '/posts/nuxt-dx-2023', Record<never, never>, Record<never, never>>,
-    '/posts/nuxt-dx-strasbourg-2023': RouteRecordInfo<'/posts/nuxt-dx-strasbourg-2023', '/posts/nuxt-dx-strasbourg-2023', Record<never, never>, Record<never, never>>,
-    '/posts/nuxt-icon-v1': RouteRecordInfo<'/posts/nuxt-icon-v1', '/posts/nuxt-icon-v1', Record<never, never>, Record<never, never>>,
-    '/posts/ohayo-tokyo': RouteRecordInfo<'/posts/ohayo-tokyo', '/posts/ohayo-tokyo', Record<never, never>, Record<never, never>>,
-    '/posts/optimize-await': RouteRecordInfo<'/posts/optimize-await', '/posts/optimize-await', Record<never, never>, Record<never, never>>,
-    '/posts/patterns-of-vueuse-vuefes-japan-2022': RouteRecordInfo<'/posts/patterns-of-vueuse-vuefes-japan-2022', '/posts/patterns-of-vueuse-vuefes-japan-2022', Record<never, never>, Record<never, never>>,
-    '/posts/photos-page': RouteRecordInfo<'/posts/photos-page', '/posts/photos-page', Record<never, never>, Record<never, never>>,
-    '/posts/pnpm-external-disk': RouteRecordInfo<'/posts/pnpm-external-disk', '/posts/pnpm-external-disk', Record<never, never>, Record<never, never>>,
-    '/posts/publish-esm-and-cjs': RouteRecordInfo<'/posts/publish-esm-and-cjs', '/posts/publish-esm-and-cjs', Record<never, never>, Record<never, never>>,
-    '/posts/range-in-javascript': RouteRecordInfo<'/posts/range-in-javascript', '/posts/range-in-javascript', Record<never, never>, Record<never, never>>,
-    '/posts/reflection-of-speaking-in-public': RouteRecordInfo<'/posts/reflection-of-speaking-in-public', '/posts/reflection-of-speaking-in-public', Record<never, never>, Record<never, never>>,
-    '/posts/refreshed-nuxt-eslint': RouteRecordInfo<'/posts/refreshed-nuxt-eslint', '/posts/refreshed-nuxt-eslint', Record<never, never>, Record<never, never>>,
-    '/posts/reimagine-atomic-css': RouteRecordInfo<'/posts/reimagine-atomic-css', '/posts/reimagine-atomic-css', Record<never, never>, Record<never, never>>,
-    '/posts/reimagine-atomic-css-zh': RouteRecordInfo<'/posts/reimagine-atomic-css-zh', '/posts/reimagine-atomic-css-zh', Record<never, never>, Record<never, never>>,
-    '/posts/rewrite-in-vite': RouteRecordInfo<'/posts/rewrite-in-vite', '/posts/rewrite-in-vite', Record<never, never>, Record<never, never>>,
-    '/posts/roads-to-oss-progressive-vueams-2024': RouteRecordInfo<'/posts/roads-to-oss-progressive-vueams-2024', '/posts/roads-to-oss-progressive-vueams-2024', Record<never, never>, Record<never, never>>,
-    '/posts/roads-to-oss-set-theory-react-paris-2024': RouteRecordInfo<'/posts/roads-to-oss-set-theory-react-paris-2024', '/posts/roads-to-oss-set-theory-react-paris-2024', Record<never, never>, Record<never, never>>,
-    '/posts/roads-to-oss-set-theory-viteconf-2023': RouteRecordInfo<'/posts/roads-to-oss-set-theory-viteconf-2023', '/posts/roads-to-oss-set-theory-viteconf-2023', Record<never, never>, Record<never, never>>,
-    '/posts/roads-to-oss-set-theory-vuefesjapan-2023': RouteRecordInfo<'/posts/roads-to-oss-set-theory-vuefesjapan-2023', '/posts/roads-to-oss-set-theory-vuefesjapan-2023', Record<never, never>, Record<never, never>>,
-    '/posts/shiki-magic-move': RouteRecordInfo<'/posts/shiki-magic-move', '/posts/shiki-magic-move', Record<never, never>, Record<never, never>>,
-    '/posts/shikiji-twoslash': RouteRecordInfo<'/posts/shikiji-twoslash', '/posts/shikiji-twoslash', Record<never, never>, Record<never, never>>,
-    '/posts/sliding-enter-animation': RouteRecordInfo<'/posts/sliding-enter-animation', '/posts/sliding-enter-animation', Record<never, never>, Record<never, never>>,
-    '/posts/sponsorship-forwarding': RouteRecordInfo<'/posts/sponsorship-forwarding', '/posts/sponsorship-forwarding', Record<never, never>, Record<never, never>>,
-    '/posts/type-inferencing-in-vue': RouteRecordInfo<'/posts/type-inferencing-in-vue', '/posts/type-inferencing-in-vue', Record<never, never>, Record<never, never>>,
-    '/posts/type-your-config': RouteRecordInfo<'/posts/type-your-config', '/posts/type-your-config', Record<never, never>, Record<never, never>>,
-    '/posts/typed-provide-and-inject-in-vue': RouteRecordInfo<'/posts/typed-provide-and-inject-in-vue', '/posts/typed-provide-and-inject-in-vue', Record<never, never>, Record<never, never>>,
-    '/posts/types-for-sub-modules': RouteRecordInfo<'/posts/types-for-sub-modules', '/posts/types-for-sub-modules', Record<never, never>, Record<never, never>>,
-    '/posts/vite-on-demand-dx-viteconf-2022': RouteRecordInfo<'/posts/vite-on-demand-dx-viteconf-2022', '/posts/vite-on-demand-dx-viteconf-2022', Record<never, never>, Record<never, never>>,
-    '/posts/vue-3-notes': RouteRecordInfo<'/posts/vue-3-notes', '/posts/vue-3-notes', Record<never, never>, Record<never, never>>,
-    '/posts/vue-beijing-2021': RouteRecordInfo<'/posts/vue-beijing-2021', '/posts/vue-beijing-2021', Record<never, never>, Record<never, never>>,
-    '/posts/vueuse-best-practice-vueconf-china-2022': RouteRecordInfo<'/posts/vueuse-best-practice-vueconf-china-2022', '/posts/vueuse-best-practice-vueconf-china-2022', Record<never, never>, Record<never, never>>,
-    '/posts/watch-with-reactivity': RouteRecordInfo<'/posts/watch-with-reactivity', '/posts/watch-with-reactivity', Record<never, never>, Record<never, never>>,
-    '/posts/why-not-prettier': RouteRecordInfo<'/posts/why-not-prettier', '/posts/why-not-prettier', Record<never, never>, Record<never, never>>,
-    '/posts/why-not-prettier-zh': RouteRecordInfo<'/posts/why-not-prettier-zh', '/posts/why-not-prettier-zh', Record<never, never>, Record<never, never>>,
-    '/posts/why-reproductions-are-required': RouteRecordInfo<'/posts/why-reproductions-are-required', '/posts/why-reproductions-are-required', Record<never, never>, Record<never, never>>,
-    '/posts/why-reproductions-are-required-zh': RouteRecordInfo<'/posts/why-reproductions-are-required-zh', '/posts/why-reproductions-are-required-zh', Record<never, never>, Record<never, never>>,
-    '/posts/windicss-and-tailwind-jit': RouteRecordInfo<'/posts/windicss-and-tailwind-jit', '/posts/windicss-and-tailwind-jit', Record<never, never>, Record<never, never>>,
+    '/posts/PIBIC-Camadas-Médias-e-o-seu-Espaço-Escolar': RouteRecordInfo<'/posts/PIBIC-Camadas-Médias-e-o-seu-Espaço-Escolar', '/posts/PIBIC-Camadas-Médias-e-o-seu-Espaço-Escolar', Record<never, never>, Record<never, never>>,
+    '/posts/primeiro post': RouteRecordInfo<'/posts/primeiro post', '/posts/primeiro post', Record<never, never>, Record<never, never>>,
     '/projects': RouteRecordInfo<'/projects', '/projects', Record<never, never>, Record<never, never>>,
     '/sponsors-list': RouteRecordInfo<'/sponsors-list', '/sponsors-list', Record<never, never>, Record<never, never>>,
     '/streams': RouteRecordInfo<'/streams', '/streams', Record<never, never>, Record<never, never>>,
     '/talks': RouteRecordInfo<'/talks', '/talks', Record<never, never>, Record<never, never>>,
+    '/trash/about-yak-shaving': RouteRecordInfo<'/trash/about-yak-shaving', '/trash/about-yak-shaving', Record<never, never>, Record<never, never>>,
+    '/trash/about-yak-shaving-zh': RouteRecordInfo<'/trash/about-yak-shaving-zh', '/trash/about-yak-shaving-zh', Record<never, never>, Record<never, never>>,
+    '/trash/ai-qrcode': RouteRecordInfo<'/trash/ai-qrcode', '/trash/ai-qrcode', Record<never, never>, Record<never, never>>,
+    '/trash/ai-qrcode-101': RouteRecordInfo<'/trash/ai-qrcode-101', '/trash/ai-qrcode-101', Record<never, never>, Record<never, never>>,
+    '/trash/ai-qrcode-refine': RouteRecordInfo<'/trash/ai-qrcode-refine', '/trash/ai-qrcode-refine', Record<never, never>, Record<never, never>>,
+    '/trash/animated-svg-logo': RouteRecordInfo<'/trash/animated-svg-logo', '/trash/animated-svg-logo', Record<never, never>, Record<never, never>>,
+    '/trash/async-sync-in-between': RouteRecordInfo<'/trash/async-sync-in-between', '/trash/async-sync-in-between', Record<never, never>, Record<never, never>>,
+    '/trash/async-with-composition-api': RouteRecordInfo<'/trash/async-with-composition-api', '/trash/async-with-composition-api', Record<never, never>, Record<never, never>>,
+    '/trash/binfe-2020-zh': RouteRecordInfo<'/trash/binfe-2020-zh', '/trash/binfe-2020-zh', Record<never, never>, Record<never, never>>,
+    '/trash/bonjour-paris': RouteRecordInfo<'/trash/bonjour-paris', '/trash/bonjour-paris', Record<never, never>, Record<never, never>>,
+    '/trash/break-lines-in-js': RouteRecordInfo<'/trash/break-lines-in-js', '/trash/break-lines-in-js', Record<never, never>, Record<never, never>>,
+    '/trash/categorize-deps': RouteRecordInfo<'/trash/categorize-deps', '/trash/categorize-deps', Record<never, never>, Record<never, never>>,
+    '/trash/color-scheme-for-vscode-ext': RouteRecordInfo<'/trash/color-scheme-for-vscode-ext', '/trash/color-scheme-for-vscode-ext', Record<never, never>, Record<never, never>>,
+    '/trash/composable-vue-vueconf-china-2021': RouteRecordInfo<'/trash/composable-vue-vueconf-china-2021', '/trash/composable-vue-vueconf-china-2021', Record<never, never>, Record<never, never>>,
+    '/trash/composable-vue-vueday-2021': RouteRecordInfo<'/trash/composable-vue-vueday-2021', '/trash/composable-vue-vueday-2021', Record<never, never>, Record<never, never>>,
+    '/trash/destructuring-with-object-or-array': RouteRecordInfo<'/trash/destructuring-with-object-or-array', '/trash/destructuring-with-object-or-array', Record<never, never>, Record<never, never>>,
+    '/trash/dev-ssr-on-nuxt': RouteRecordInfo<'/trash/dev-ssr-on-nuxt', '/trash/dev-ssr-on-nuxt', Record<never, never>, Record<never, never>>,
+    '/trash/domain-email': RouteRecordInfo<'/trash/domain-email', '/trash/domain-email', Record<never, never>, Record<never, never>>,
+    '/trash/epoch-semver': RouteRecordInfo<'/trash/epoch-semver', '/trash/epoch-semver', Record<never, never>, Record<never, never>>,
+    '/trash/eslint-config-inspector': RouteRecordInfo<'/trash/eslint-config-inspector', '/trash/eslint-config-inspector', Record<never, never>, Record<never, never>>,
+    '/trash/evolution-of-shiki-v1': RouteRecordInfo<'/trash/evolution-of-shiki-v1', '/trash/evolution-of-shiki-v1', Record<never, never>, Record<never, never>>,
+    '/trash/get-package-root': RouteRecordInfo<'/trash/get-package-root', '/trash/get-package-root', Record<never, never>, Record<never, never>>,
+    '/trash/github-alerts': RouteRecordInfo<'/trash/github-alerts', '/trash/github-alerts', Record<never, never>, Record<never, never>>,
+    '/trash/github-co-authors': RouteRecordInfo<'/trash/github-co-authors', '/trash/github-co-authors', Record<never, never>, Record<never, never>>,
+    '/trash/hello-tokyo': RouteRecordInfo<'/trash/hello-tokyo', '/trash/hello-tokyo', Record<never, never>, Record<never, never>>,
+    '/trash/icons-in-pure-css': RouteRecordInfo<'/trash/icons-in-pure-css', '/trash/icons-in-pure-css', Record<never, never>, Record<never, never>>,
+    '/trash/icons-in-pure-css-zh': RouteRecordInfo<'/trash/icons-in-pure-css-zh', '/trash/icons-in-pure-css-zh', Record<never, never>, Record<never, never>>,
+    '/trash/introducing-nuxt-devtools': RouteRecordInfo<'/trash/introducing-nuxt-devtools', '/trash/introducing-nuxt-devtools', Record<never, never>, Record<never, never>>,
+    '/trash/introduction-to-vitest-vue-nation-2022': RouteRecordInfo<'/trash/introduction-to-vitest-vue-nation-2022', '/trash/introduction-to-vitest-vue-nation-2022', Record<never, never>, Record<never, never>>,
+    '/trash/isomorphic-dirname': RouteRecordInfo<'/trash/isomorphic-dirname', '/trash/isomorphic-dirname', Record<never, never>, Record<never, never>>,
+    '/trash/journey-with-icons': RouteRecordInfo<'/trash/journey-with-icons', '/trash/journey-with-icons', Record<never, never>, Record<never, never>>,
+    '/trash/journey-with-icons-continues': RouteRecordInfo<'/trash/journey-with-icons-continues', '/trash/journey-with-icons-continues', Record<never, never>, Record<never, never>>,
+    '/trash/make-libraries-working-with-vue-2-and-3': RouteRecordInfo<'/trash/make-libraries-working-with-vue-2-and-3', '/trash/make-libraries-working-with-vue-2-and-3', Record<never, never>, Record<never, never>>,
+    '/trash/manage-github-notifications-2023': RouteRecordInfo<'/trash/manage-github-notifications-2023', '/trash/manage-github-notifications-2023', Record<never, never>, Record<never, never>>,
+    '/trash/match-chinese-characters': RouteRecordInfo<'/trash/match-chinese-characters', '/trash/match-chinese-characters', Record<never, never>, Record<never, never>>,
+    '/trash/match-quotes-in-pairs': RouteRecordInfo<'/trash/match-quotes-in-pairs', '/trash/match-quotes-in-pairs', Record<never, never>, Record<never, never>>,
+    '/trash/mental-health-oss': RouteRecordInfo<'/trash/mental-health-oss', '/trash/mental-health-oss', Record<never, never>, Record<never, never>>,
+    '/trash/mental-health-oss-zh': RouteRecordInfo<'/trash/mental-health-oss-zh', '/trash/mental-health-oss-zh', Record<never, never>, Record<never, never>>,
+    '/trash/move-on-to-esm-only': RouteRecordInfo<'/trash/move-on-to-esm-only', '/trash/move-on-to-esm-only', Record<never, never>, Record<never, never>>,
+    '/trash/netlify-redirects': RouteRecordInfo<'/trash/netlify-redirects', '/trash/netlify-redirects', Record<never, never>, Record<never, never>>,
+    '/trash/new-house': RouteRecordInfo<'/trash/new-house', '/trash/new-house', Record<never, never>, Record<never, never>>,
+    '/trash/new-ways-to-vue-london-2021': RouteRecordInfo<'/trash/new-ways-to-vue-london-2021', '/trash/new-ways-to-vue-london-2021', Record<never, never>, Record<never, never>>,
+    '/trash/new-ways-to-vue-taiwan-2021': RouteRecordInfo<'/trash/new-ways-to-vue-taiwan-2021', '/trash/new-ways-to-vue-taiwan-2021', Record<never, never>, Record<never, never>>,
+    '/trash/now-and-future-devtools-nuxt-nation-2023': RouteRecordInfo<'/trash/now-and-future-devtools-nuxt-nation-2023', '/trash/now-and-future-devtools-nuxt-nation-2023', Record<never, never>, Record<never, never>>,
+    '/trash/npm-binary-mirrors': RouteRecordInfo<'/trash/npm-binary-mirrors', '/trash/npm-binary-mirrors', Record<never, never>, Record<never, never>>,
+    '/trash/nuxt-devtools-v1': RouteRecordInfo<'/trash/nuxt-devtools-v1', '/trash/nuxt-devtools-v1', Record<never, never>, Record<never, never>>,
+    '/trash/nuxt-dx-2023': RouteRecordInfo<'/trash/nuxt-dx-2023', '/trash/nuxt-dx-2023', Record<never, never>, Record<never, never>>,
+    '/trash/nuxt-dx-strasbourg-2023': RouteRecordInfo<'/trash/nuxt-dx-strasbourg-2023', '/trash/nuxt-dx-strasbourg-2023', Record<never, never>, Record<never, never>>,
+    '/trash/nuxt-icon-v1': RouteRecordInfo<'/trash/nuxt-icon-v1', '/trash/nuxt-icon-v1', Record<never, never>, Record<never, never>>,
+    '/trash/ohayo-tokyo': RouteRecordInfo<'/trash/ohayo-tokyo', '/trash/ohayo-tokyo', Record<never, never>, Record<never, never>>,
+    '/trash/optimize-await': RouteRecordInfo<'/trash/optimize-await', '/trash/optimize-await', Record<never, never>, Record<never, never>>,
+    '/trash/patterns-of-vueuse-vuefes-japan-2022': RouteRecordInfo<'/trash/patterns-of-vueuse-vuefes-japan-2022', '/trash/patterns-of-vueuse-vuefes-japan-2022', Record<never, never>, Record<never, never>>,
+    '/trash/photos-page': RouteRecordInfo<'/trash/photos-page', '/trash/photos-page', Record<never, never>, Record<never, never>>,
+    '/trash/pnpm-external-disk': RouteRecordInfo<'/trash/pnpm-external-disk', '/trash/pnpm-external-disk', Record<never, never>, Record<never, never>>,
+    '/trash/publish-esm-and-cjs': RouteRecordInfo<'/trash/publish-esm-and-cjs', '/trash/publish-esm-and-cjs', Record<never, never>, Record<never, never>>,
+    '/trash/range-in-javascript': RouteRecordInfo<'/trash/range-in-javascript', '/trash/range-in-javascript', Record<never, never>, Record<never, never>>,
+    '/trash/reflection-of-speaking-in-public': RouteRecordInfo<'/trash/reflection-of-speaking-in-public', '/trash/reflection-of-speaking-in-public', Record<never, never>, Record<never, never>>,
+    '/trash/refreshed-nuxt-eslint': RouteRecordInfo<'/trash/refreshed-nuxt-eslint', '/trash/refreshed-nuxt-eslint', Record<never, never>, Record<never, never>>,
+    '/trash/reimagine-atomic-css': RouteRecordInfo<'/trash/reimagine-atomic-css', '/trash/reimagine-atomic-css', Record<never, never>, Record<never, never>>,
+    '/trash/reimagine-atomic-css-zh': RouteRecordInfo<'/trash/reimagine-atomic-css-zh', '/trash/reimagine-atomic-css-zh', Record<never, never>, Record<never, never>>,
+    '/trash/rewrite-in-vite': RouteRecordInfo<'/trash/rewrite-in-vite', '/trash/rewrite-in-vite', Record<never, never>, Record<never, never>>,
+    '/trash/roads-to-oss-progressive-vueams-2024': RouteRecordInfo<'/trash/roads-to-oss-progressive-vueams-2024', '/trash/roads-to-oss-progressive-vueams-2024', Record<never, never>, Record<never, never>>,
+    '/trash/roads-to-oss-set-theory-react-paris-2024': RouteRecordInfo<'/trash/roads-to-oss-set-theory-react-paris-2024', '/trash/roads-to-oss-set-theory-react-paris-2024', Record<never, never>, Record<never, never>>,
+    '/trash/roads-to-oss-set-theory-viteconf-2023': RouteRecordInfo<'/trash/roads-to-oss-set-theory-viteconf-2023', '/trash/roads-to-oss-set-theory-viteconf-2023', Record<never, never>, Record<never, never>>,
+    '/trash/roads-to-oss-set-theory-vuefesjapan-2023': RouteRecordInfo<'/trash/roads-to-oss-set-theory-vuefesjapan-2023', '/trash/roads-to-oss-set-theory-vuefesjapan-2023', Record<never, never>, Record<never, never>>,
+    '/trash/shiki-magic-move': RouteRecordInfo<'/trash/shiki-magic-move', '/trash/shiki-magic-move', Record<never, never>, Record<never, never>>,
+    '/trash/shikiji-twoslash': RouteRecordInfo<'/trash/shikiji-twoslash', '/trash/shikiji-twoslash', Record<never, never>, Record<never, never>>,
+    '/trash/sliding-enter-animation': RouteRecordInfo<'/trash/sliding-enter-animation', '/trash/sliding-enter-animation', Record<never, never>, Record<never, never>>,
+    '/trash/sponsorship-forwarding': RouteRecordInfo<'/trash/sponsorship-forwarding', '/trash/sponsorship-forwarding', Record<never, never>, Record<never, never>>,
+    '/trash/type-inferencing-in-vue': RouteRecordInfo<'/trash/type-inferencing-in-vue', '/trash/type-inferencing-in-vue', Record<never, never>, Record<never, never>>,
+    '/trash/type-your-config': RouteRecordInfo<'/trash/type-your-config', '/trash/type-your-config', Record<never, never>, Record<never, never>>,
+    '/trash/typed-provide-and-inject-in-vue': RouteRecordInfo<'/trash/typed-provide-and-inject-in-vue', '/trash/typed-provide-and-inject-in-vue', Record<never, never>, Record<never, never>>,
+    '/trash/types-for-sub-modules': RouteRecordInfo<'/trash/types-for-sub-modules', '/trash/types-for-sub-modules', Record<never, never>, Record<never, never>>,
+    '/trash/vite-on-demand-dx-viteconf-2022': RouteRecordInfo<'/trash/vite-on-demand-dx-viteconf-2022', '/trash/vite-on-demand-dx-viteconf-2022', Record<never, never>, Record<never, never>>,
+    '/trash/vue-beijing-2021': RouteRecordInfo<'/trash/vue-beijing-2021', '/trash/vue-beijing-2021', Record<never, never>, Record<never, never>>,
+    '/trash/vueuse-best-practice-vueconf-china-2022': RouteRecordInfo<'/trash/vueuse-best-practice-vueconf-china-2022', '/trash/vueuse-best-practice-vueconf-china-2022', Record<never, never>, Record<never, never>>,
+    '/trash/watch-with-reactivity': RouteRecordInfo<'/trash/watch-with-reactivity', '/trash/watch-with-reactivity', Record<never, never>, Record<never, never>>,
+    '/trash/why-not-prettier': RouteRecordInfo<'/trash/why-not-prettier', '/trash/why-not-prettier', Record<never, never>, Record<never, never>>,
+    '/trash/why-not-prettier-zh': RouteRecordInfo<'/trash/why-not-prettier-zh', '/trash/why-not-prettier-zh', Record<never, never>, Record<never, never>>,
+    '/trash/why-reproductions-are-required': RouteRecordInfo<'/trash/why-reproductions-are-required', '/trash/why-reproductions-are-required', Record<never, never>, Record<never, never>>,
+    '/trash/why-reproductions-are-required-zh': RouteRecordInfo<'/trash/why-reproductions-are-required-zh', '/trash/why-reproductions-are-required-zh', Record<never, never>, Record<never, never>>,
+    '/trash/windicss-and-tailwind-jit': RouteRecordInfo<'/trash/windicss-and-tailwind-jit', '/trash/windicss-and-tailwind-jit', Record<never, never>, Record<never, never>>,
     '/use': RouteRecordInfo<'/use', '/use', Record<never, never>, Record<never, never>>,
   }
 
@@ -190,340 +191,16 @@ declare module 'vue-router/auto-routes' {
       routes: '/posts/'
       views: never
     }
-    'pages/posts/about-yak-shaving.md': {
-      routes: '/posts/about-yak-shaving'
-      views: never
-    }
-    'pages/posts/about-yak-shaving-zh.md': {
-      routes: '/posts/about-yak-shaving-zh'
-      views: never
-    }
-    'pages/posts/ai-qrcode.md': {
-      routes: '/posts/ai-qrcode'
-      views: never
-    }
-    'pages/posts/ai-qrcode-101.md': {
-      routes: '/posts/ai-qrcode-101'
-      views: never
-    }
-    'pages/posts/ai-qrcode-refine.md': {
-      routes: '/posts/ai-qrcode-refine'
-      views: never
-    }
-    'pages/posts/animated-svg-logo.md': {
-      routes: '/posts/animated-svg-logo'
-      views: never
-    }
-    'pages/posts/async-sync-in-between.md': {
-      routes: '/posts/async-sync-in-between'
-      views: never
-    }
-    'pages/posts/async-with-composition-api.md': {
-      routes: '/posts/async-with-composition-api'
-      views: never
-    }
-    'pages/posts/binfe-2020-zh.md': {
-      routes: '/posts/binfe-2020-zh'
-      views: never
-    }
-    'pages/posts/bonjour-paris.md': {
-      routes: '/posts/bonjour-paris'
-      views: never
-    }
-    'pages/posts/break-lines-in-js.md': {
-      routes: '/posts/break-lines-in-js'
-      views: never
-    }
-    'pages/posts/categorize-deps.md': {
-      routes: '/posts/categorize-deps'
-      views: never
-    }
-    'pages/posts/color-scheme-for-vscode-ext.md': {
-      routes: '/posts/color-scheme-for-vscode-ext'
-      views: never
-    }
-    'pages/posts/composable-vue-vueconf-china-2021.md': {
-      routes: '/posts/composable-vue-vueconf-china-2021'
-      views: never
-    }
-    'pages/posts/composable-vue-vueday-2021.md': {
-      routes: '/posts/composable-vue-vueday-2021'
-      views: never
-    }
-    'pages/posts/destructuring-with-object-or-array.md': {
-      routes: '/posts/destructuring-with-object-or-array'
-      views: never
-    }
-    'pages/posts/dev-ssr-on-nuxt.md': {
-      routes: '/posts/dev-ssr-on-nuxt'
-      views: never
-    }
-    'pages/posts/domain-email.md': {
-      routes: '/posts/domain-email'
-      views: never
-    }
-    'pages/posts/epoch-semver.md': {
-      routes: '/posts/epoch-semver'
-      views: never
-    }
-    'pages/posts/eslint-config-inspector.md': {
-      routes: '/posts/eslint-config-inspector'
-      views: never
-    }
-    'pages/posts/evolution-of-shiki-v1.md': {
-      routes: '/posts/evolution-of-shiki-v1'
-      views: never
-    }
-    'pages/posts/get-package-root.md': {
-      routes: '/posts/get-package-root'
-      views: never
-    }
-    'pages/posts/github-alerts.md': {
-      routes: '/posts/github-alerts'
-      views: never
-    }
-    'pages/posts/github-co-authors.md': {
-      routes: '/posts/github-co-authors'
-      views: never
-    }
-    'pages/posts/hello-tokyo.md': {
-      routes: '/posts/hello-tokyo'
-      views: never
-    }
-    'pages/posts/icons-in-pure-css.md': {
-      routes: '/posts/icons-in-pure-css'
-      views: never
-    }
-    'pages/posts/icons-in-pure-css-zh.md': {
-      routes: '/posts/icons-in-pure-css-zh'
-      views: never
-    }
-    'pages/posts/introducing-nuxt-devtools.md': {
-      routes: '/posts/introducing-nuxt-devtools'
-      views: never
-    }
-    'pages/posts/introduction-to-vitest-vue-nation-2022.md': {
-      routes: '/posts/introduction-to-vitest-vue-nation-2022'
-      views: never
-    }
-    'pages/posts/isomorphic-dirname.md': {
-      routes: '/posts/isomorphic-dirname'
-      views: never
-    }
-    'pages/posts/journey-with-icons.md': {
-      routes: '/posts/journey-with-icons'
-      views: never
-    }
-    'pages/posts/journey-with-icons-continues.md': {
-      routes: '/posts/journey-with-icons-continues'
-      views: never
-    }
-    'pages/posts/make-libraries-working-with-vue-2-and-3.md': {
-      routes: '/posts/make-libraries-working-with-vue-2-and-3'
-      views: never
-    }
-    'pages/posts/manage-github-notifications-2023.md': {
-      routes: '/posts/manage-github-notifications-2023'
-      views: never
-    }
-    'pages/posts/match-chinese-characters.md': {
-      routes: '/posts/match-chinese-characters'
-      views: never
-    }
-    'pages/posts/match-quotes-in-pairs.md': {
-      routes: '/posts/match-quotes-in-pairs'
-      views: never
-    }
-    'pages/posts/mental-health-oss.md': {
-      routes: '/posts/mental-health-oss'
-      views: never
-    }
-    'pages/posts/mental-health-oss-zh.md': {
-      routes: '/posts/mental-health-oss-zh'
-      views: never
-    }
-    'pages/posts/move-on-to-esm-only.md': {
-      routes: '/posts/move-on-to-esm-only'
-      views: never
-    }
-    'pages/posts/netlify-redirects.md': {
-      routes: '/posts/netlify-redirects'
-      views: never
-    }
-    'pages/posts/new-house.md': {
-      routes: '/posts/new-house'
-      views: never
-    }
-    'pages/posts/new-ways-to-vue-london-2021.md': {
-      routes: '/posts/new-ways-to-vue-london-2021'
-      views: never
-    }
-    'pages/posts/new-ways-to-vue-taiwan-2021.md': {
-      routes: '/posts/new-ways-to-vue-taiwan-2021'
-      views: never
-    }
-    'pages/posts/now-and-future-devtools-nuxt-nation-2023.md': {
-      routes: '/posts/now-and-future-devtools-nuxt-nation-2023'
-      views: never
-    }
-    'pages/posts/npm-binary-mirrors.md': {
-      routes: '/posts/npm-binary-mirrors'
-      views: never
-    }
     'pages/posts/nuxt-cpuprofile.md': {
       routes: '/posts/nuxt-cpuprofile'
       views: never
     }
-    'pages/posts/nuxt-devtools-v1.md': {
-      routes: '/posts/nuxt-devtools-v1'
+    'pages/posts/PIBIC-Camadas-Médias-e-o-seu-Espaço-Escolar.md': {
+      routes: '/posts/PIBIC-Camadas-Médias-e-o-seu-Espaço-Escolar'
       views: never
     }
-    'pages/posts/nuxt-dx-2023.md': {
-      routes: '/posts/nuxt-dx-2023'
-      views: never
-    }
-    'pages/posts/nuxt-dx-strasbourg-2023.md': {
-      routes: '/posts/nuxt-dx-strasbourg-2023'
-      views: never
-    }
-    'pages/posts/nuxt-icon-v1.md': {
-      routes: '/posts/nuxt-icon-v1'
-      views: never
-    }
-    'pages/posts/ohayo-tokyo.md': {
-      routes: '/posts/ohayo-tokyo'
-      views: never
-    }
-    'pages/posts/optimize-await.md': {
-      routes: '/posts/optimize-await'
-      views: never
-    }
-    'pages/posts/patterns-of-vueuse-vuefes-japan-2022.md': {
-      routes: '/posts/patterns-of-vueuse-vuefes-japan-2022'
-      views: never
-    }
-    'pages/posts/photos-page.md': {
-      routes: '/posts/photos-page'
-      views: never
-    }
-    'pages/posts/pnpm-external-disk.md': {
-      routes: '/posts/pnpm-external-disk'
-      views: never
-    }
-    'pages/posts/publish-esm-and-cjs.md': {
-      routes: '/posts/publish-esm-and-cjs'
-      views: never
-    }
-    'pages/posts/range-in-javascript.md': {
-      routes: '/posts/range-in-javascript'
-      views: never
-    }
-    'pages/posts/reflection-of-speaking-in-public.md': {
-      routes: '/posts/reflection-of-speaking-in-public'
-      views: never
-    }
-    'pages/posts/refreshed-nuxt-eslint.md': {
-      routes: '/posts/refreshed-nuxt-eslint'
-      views: never
-    }
-    'pages/posts/reimagine-atomic-css.md': {
-      routes: '/posts/reimagine-atomic-css'
-      views: never
-    }
-    'pages/posts/reimagine-atomic-css-zh.md': {
-      routes: '/posts/reimagine-atomic-css-zh'
-      views: never
-    }
-    'pages/posts/rewrite-in-vite.md': {
-      routes: '/posts/rewrite-in-vite'
-      views: never
-    }
-    'pages/posts/roads-to-oss-progressive-vueams-2024.md': {
-      routes: '/posts/roads-to-oss-progressive-vueams-2024'
-      views: never
-    }
-    'pages/posts/roads-to-oss-set-theory-react-paris-2024.md': {
-      routes: '/posts/roads-to-oss-set-theory-react-paris-2024'
-      views: never
-    }
-    'pages/posts/roads-to-oss-set-theory-viteconf-2023.md': {
-      routes: '/posts/roads-to-oss-set-theory-viteconf-2023'
-      views: never
-    }
-    'pages/posts/roads-to-oss-set-theory-vuefesjapan-2023.md': {
-      routes: '/posts/roads-to-oss-set-theory-vuefesjapan-2023'
-      views: never
-    }
-    'pages/posts/shiki-magic-move.md': {
-      routes: '/posts/shiki-magic-move'
-      views: never
-    }
-    'pages/posts/shikiji-twoslash.md': {
-      routes: '/posts/shikiji-twoslash'
-      views: never
-    }
-    'pages/posts/sliding-enter-animation.md': {
-      routes: '/posts/sliding-enter-animation'
-      views: never
-    }
-    'pages/posts/sponsorship-forwarding.md': {
-      routes: '/posts/sponsorship-forwarding'
-      views: never
-    }
-    'pages/posts/type-inferencing-in-vue.md': {
-      routes: '/posts/type-inferencing-in-vue'
-      views: never
-    }
-    'pages/posts/type-your-config.md': {
-      routes: '/posts/type-your-config'
-      views: never
-    }
-    'pages/posts/typed-provide-and-inject-in-vue.md': {
-      routes: '/posts/typed-provide-and-inject-in-vue'
-      views: never
-    }
-    'pages/posts/types-for-sub-modules.md': {
-      routes: '/posts/types-for-sub-modules'
-      views: never
-    }
-    'pages/posts/vite-on-demand-dx-viteconf-2022.md': {
-      routes: '/posts/vite-on-demand-dx-viteconf-2022'
-      views: never
-    }
-    'pages/posts/vue-3-notes.md': {
-      routes: '/posts/vue-3-notes'
-      views: never
-    }
-    'pages/posts/vue-beijing-2021.md': {
-      routes: '/posts/vue-beijing-2021'
-      views: never
-    }
-    'pages/posts/vueuse-best-practice-vueconf-china-2022.md': {
-      routes: '/posts/vueuse-best-practice-vueconf-china-2022'
-      views: never
-    }
-    'pages/posts/watch-with-reactivity.md': {
-      routes: '/posts/watch-with-reactivity'
-      views: never
-    }
-    'pages/posts/why-not-prettier.md': {
-      routes: '/posts/why-not-prettier'
-      views: never
-    }
-    'pages/posts/why-not-prettier-zh.md': {
-      routes: '/posts/why-not-prettier-zh'
-      views: never
-    }
-    'pages/posts/why-reproductions-are-required.md': {
-      routes: '/posts/why-reproductions-are-required'
-      views: never
-    }
-    'pages/posts/why-reproductions-are-required-zh.md': {
-      routes: '/posts/why-reproductions-are-required-zh'
-      views: never
-    }
-    'pages/posts/windicss-and-tailwind-jit.md': {
-      routes: '/posts/windicss-and-tailwind-jit'
+    'pages/posts/primeiro post.md': {
+      routes: '/posts/primeiro post'
       views: never
     }
     'pages/projects.md': {
@@ -540,6 +217,334 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/talks.md': {
       routes: '/talks'
+      views: never
+    }
+    'pages/trash/about-yak-shaving.md': {
+      routes: '/trash/about-yak-shaving'
+      views: never
+    }
+    'pages/trash/about-yak-shaving-zh.md': {
+      routes: '/trash/about-yak-shaving-zh'
+      views: never
+    }
+    'pages/trash/ai-qrcode.md': {
+      routes: '/trash/ai-qrcode'
+      views: never
+    }
+    'pages/trash/ai-qrcode-101.md': {
+      routes: '/trash/ai-qrcode-101'
+      views: never
+    }
+    'pages/trash/ai-qrcode-refine.md': {
+      routes: '/trash/ai-qrcode-refine'
+      views: never
+    }
+    'pages/trash/animated-svg-logo.md': {
+      routes: '/trash/animated-svg-logo'
+      views: never
+    }
+    'pages/trash/async-sync-in-between.md': {
+      routes: '/trash/async-sync-in-between'
+      views: never
+    }
+    'pages/trash/async-with-composition-api.md': {
+      routes: '/trash/async-with-composition-api'
+      views: never
+    }
+    'pages/trash/binfe-2020-zh.md': {
+      routes: '/trash/binfe-2020-zh'
+      views: never
+    }
+    'pages/trash/bonjour-paris.md': {
+      routes: '/trash/bonjour-paris'
+      views: never
+    }
+    'pages/trash/break-lines-in-js.md': {
+      routes: '/trash/break-lines-in-js'
+      views: never
+    }
+    'pages/trash/categorize-deps.md': {
+      routes: '/trash/categorize-deps'
+      views: never
+    }
+    'pages/trash/color-scheme-for-vscode-ext.md': {
+      routes: '/trash/color-scheme-for-vscode-ext'
+      views: never
+    }
+    'pages/trash/composable-vue-vueconf-china-2021.md': {
+      routes: '/trash/composable-vue-vueconf-china-2021'
+      views: never
+    }
+    'pages/trash/composable-vue-vueday-2021.md': {
+      routes: '/trash/composable-vue-vueday-2021'
+      views: never
+    }
+    'pages/trash/destructuring-with-object-or-array.md': {
+      routes: '/trash/destructuring-with-object-or-array'
+      views: never
+    }
+    'pages/trash/dev-ssr-on-nuxt.md': {
+      routes: '/trash/dev-ssr-on-nuxt'
+      views: never
+    }
+    'pages/trash/domain-email.md': {
+      routes: '/trash/domain-email'
+      views: never
+    }
+    'pages/trash/epoch-semver.md': {
+      routes: '/trash/epoch-semver'
+      views: never
+    }
+    'pages/trash/eslint-config-inspector.md': {
+      routes: '/trash/eslint-config-inspector'
+      views: never
+    }
+    'pages/trash/evolution-of-shiki-v1.md': {
+      routes: '/trash/evolution-of-shiki-v1'
+      views: never
+    }
+    'pages/trash/get-package-root.md': {
+      routes: '/trash/get-package-root'
+      views: never
+    }
+    'pages/trash/github-alerts.md': {
+      routes: '/trash/github-alerts'
+      views: never
+    }
+    'pages/trash/github-co-authors.md': {
+      routes: '/trash/github-co-authors'
+      views: never
+    }
+    'pages/trash/hello-tokyo.md': {
+      routes: '/trash/hello-tokyo'
+      views: never
+    }
+    'pages/trash/icons-in-pure-css.md': {
+      routes: '/trash/icons-in-pure-css'
+      views: never
+    }
+    'pages/trash/icons-in-pure-css-zh.md': {
+      routes: '/trash/icons-in-pure-css-zh'
+      views: never
+    }
+    'pages/trash/introducing-nuxt-devtools.md': {
+      routes: '/trash/introducing-nuxt-devtools'
+      views: never
+    }
+    'pages/trash/introduction-to-vitest-vue-nation-2022.md': {
+      routes: '/trash/introduction-to-vitest-vue-nation-2022'
+      views: never
+    }
+    'pages/trash/isomorphic-dirname.md': {
+      routes: '/trash/isomorphic-dirname'
+      views: never
+    }
+    'pages/trash/journey-with-icons.md': {
+      routes: '/trash/journey-with-icons'
+      views: never
+    }
+    'pages/trash/journey-with-icons-continues.md': {
+      routes: '/trash/journey-with-icons-continues'
+      views: never
+    }
+    'pages/trash/make-libraries-working-with-vue-2-and-3.md': {
+      routes: '/trash/make-libraries-working-with-vue-2-and-3'
+      views: never
+    }
+    'pages/trash/manage-github-notifications-2023.md': {
+      routes: '/trash/manage-github-notifications-2023'
+      views: never
+    }
+    'pages/trash/match-chinese-characters.md': {
+      routes: '/trash/match-chinese-characters'
+      views: never
+    }
+    'pages/trash/match-quotes-in-pairs.md': {
+      routes: '/trash/match-quotes-in-pairs'
+      views: never
+    }
+    'pages/trash/mental-health-oss.md': {
+      routes: '/trash/mental-health-oss'
+      views: never
+    }
+    'pages/trash/mental-health-oss-zh.md': {
+      routes: '/trash/mental-health-oss-zh'
+      views: never
+    }
+    'pages/trash/move-on-to-esm-only.md': {
+      routes: '/trash/move-on-to-esm-only'
+      views: never
+    }
+    'pages/trash/netlify-redirects.md': {
+      routes: '/trash/netlify-redirects'
+      views: never
+    }
+    'pages/trash/new-house.md': {
+      routes: '/trash/new-house'
+      views: never
+    }
+    'pages/trash/new-ways-to-vue-london-2021.md': {
+      routes: '/trash/new-ways-to-vue-london-2021'
+      views: never
+    }
+    'pages/trash/new-ways-to-vue-taiwan-2021.md': {
+      routes: '/trash/new-ways-to-vue-taiwan-2021'
+      views: never
+    }
+    'pages/trash/now-and-future-devtools-nuxt-nation-2023.md': {
+      routes: '/trash/now-and-future-devtools-nuxt-nation-2023'
+      views: never
+    }
+    'pages/trash/npm-binary-mirrors.md': {
+      routes: '/trash/npm-binary-mirrors'
+      views: never
+    }
+    'pages/trash/nuxt-devtools-v1.md': {
+      routes: '/trash/nuxt-devtools-v1'
+      views: never
+    }
+    'pages/trash/nuxt-dx-2023.md': {
+      routes: '/trash/nuxt-dx-2023'
+      views: never
+    }
+    'pages/trash/nuxt-dx-strasbourg-2023.md': {
+      routes: '/trash/nuxt-dx-strasbourg-2023'
+      views: never
+    }
+    'pages/trash/nuxt-icon-v1.md': {
+      routes: '/trash/nuxt-icon-v1'
+      views: never
+    }
+    'pages/trash/ohayo-tokyo.md': {
+      routes: '/trash/ohayo-tokyo'
+      views: never
+    }
+    'pages/trash/optimize-await.md': {
+      routes: '/trash/optimize-await'
+      views: never
+    }
+    'pages/trash/patterns-of-vueuse-vuefes-japan-2022.md': {
+      routes: '/trash/patterns-of-vueuse-vuefes-japan-2022'
+      views: never
+    }
+    'pages/trash/photos-page.md': {
+      routes: '/trash/photos-page'
+      views: never
+    }
+    'pages/trash/pnpm-external-disk.md': {
+      routes: '/trash/pnpm-external-disk'
+      views: never
+    }
+    'pages/trash/publish-esm-and-cjs.md': {
+      routes: '/trash/publish-esm-and-cjs'
+      views: never
+    }
+    'pages/trash/range-in-javascript.md': {
+      routes: '/trash/range-in-javascript'
+      views: never
+    }
+    'pages/trash/reflection-of-speaking-in-public.md': {
+      routes: '/trash/reflection-of-speaking-in-public'
+      views: never
+    }
+    'pages/trash/refreshed-nuxt-eslint.md': {
+      routes: '/trash/refreshed-nuxt-eslint'
+      views: never
+    }
+    'pages/trash/reimagine-atomic-css.md': {
+      routes: '/trash/reimagine-atomic-css'
+      views: never
+    }
+    'pages/trash/reimagine-atomic-css-zh.md': {
+      routes: '/trash/reimagine-atomic-css-zh'
+      views: never
+    }
+    'pages/trash/rewrite-in-vite.md': {
+      routes: '/trash/rewrite-in-vite'
+      views: never
+    }
+    'pages/trash/roads-to-oss-progressive-vueams-2024.md': {
+      routes: '/trash/roads-to-oss-progressive-vueams-2024'
+      views: never
+    }
+    'pages/trash/roads-to-oss-set-theory-react-paris-2024.md': {
+      routes: '/trash/roads-to-oss-set-theory-react-paris-2024'
+      views: never
+    }
+    'pages/trash/roads-to-oss-set-theory-viteconf-2023.md': {
+      routes: '/trash/roads-to-oss-set-theory-viteconf-2023'
+      views: never
+    }
+    'pages/trash/roads-to-oss-set-theory-vuefesjapan-2023.md': {
+      routes: '/trash/roads-to-oss-set-theory-vuefesjapan-2023'
+      views: never
+    }
+    'pages/trash/shiki-magic-move.md': {
+      routes: '/trash/shiki-magic-move'
+      views: never
+    }
+    'pages/trash/shikiji-twoslash.md': {
+      routes: '/trash/shikiji-twoslash'
+      views: never
+    }
+    'pages/trash/sliding-enter-animation.md': {
+      routes: '/trash/sliding-enter-animation'
+      views: never
+    }
+    'pages/trash/sponsorship-forwarding.md': {
+      routes: '/trash/sponsorship-forwarding'
+      views: never
+    }
+    'pages/trash/type-inferencing-in-vue.md': {
+      routes: '/trash/type-inferencing-in-vue'
+      views: never
+    }
+    'pages/trash/type-your-config.md': {
+      routes: '/trash/type-your-config'
+      views: never
+    }
+    'pages/trash/typed-provide-and-inject-in-vue.md': {
+      routes: '/trash/typed-provide-and-inject-in-vue'
+      views: never
+    }
+    'pages/trash/types-for-sub-modules.md': {
+      routes: '/trash/types-for-sub-modules'
+      views: never
+    }
+    'pages/trash/vite-on-demand-dx-viteconf-2022.md': {
+      routes: '/trash/vite-on-demand-dx-viteconf-2022'
+      views: never
+    }
+    'pages/trash/vue-beijing-2021.md': {
+      routes: '/trash/vue-beijing-2021'
+      views: never
+    }
+    'pages/trash/vueuse-best-practice-vueconf-china-2022.md': {
+      routes: '/trash/vueuse-best-practice-vueconf-china-2022'
+      views: never
+    }
+    'pages/trash/watch-with-reactivity.md': {
+      routes: '/trash/watch-with-reactivity'
+      views: never
+    }
+    'pages/trash/why-not-prettier.md': {
+      routes: '/trash/why-not-prettier'
+      views: never
+    }
+    'pages/trash/why-not-prettier-zh.md': {
+      routes: '/trash/why-not-prettier-zh'
+      views: never
+    }
+    'pages/trash/why-reproductions-are-required.md': {
+      routes: '/trash/why-reproductions-are-required'
+      views: never
+    }
+    'pages/trash/why-reproductions-are-required-zh.md': {
+      routes: '/trash/why-reproductions-are-required-zh'
+      views: never
+    }
+    'pages/trash/windicss-and-tailwind-jit.md': {
+      routes: '/trash/windicss-and-tailwind-jit'
       views: never
     }
     'pages/use.md': {

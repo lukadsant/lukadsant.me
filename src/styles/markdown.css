@@ -53,6 +53,10 @@ html:not(.dark) .shiki span {
   width: 100%;
 }
 
+.prose img.avatar-profile {
+  width: auto;
+}
+
 .prose p > img {
   width: 100%;
   --uno: shadow rounded-lg;

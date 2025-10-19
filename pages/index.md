@@ -1,22 +1,19 @@
 ---
-title: Luka D'Sant
-description: Luka D'Sant's Portfolio
+
+description: Portfolio da Acácia Tavares
 image: https://antfu.me/og.png
 art: random
 ---
 
-Olá! Sou Luka D’Sant — um desenvolvedor movido pela curiosidade e pela vontade de entender como a tecnologia e a criatividade se encontram.
+<div flex="~ gap-4 items-center" class="mb-4">
+  <img src="https://atavar.es/avatar.png" alt="Avatar Acácia Tavares" class="avatar-profile w-16 h-16 md:w-20 md:h-20 rounded-full flex-shrink-0" />
+  <div>
+  <br>
+    <h1 class="text-2xl md:text-3xl font-bold m-0">Acácia Tavares</h1>
+  </div>
+</div>
 
-Atualmente, atuo na Engeconsult como desenvolvedor back-end, criando APIs, microsserviços e sistemas inteligentes em Go, Python e C#.
-
-Tenho interesse especial em infraestrutura, segurança e inteligência artificial, áreas onde busco compreender não apenas como algo funciona, mas por que funciona. No momento, estou me aprofundando em cyberops e nos fundamentos de redes, com o objetivo de construir plataformas cada vez mais seguras e eficientes.
-
-Gosto de aprender desmontando ideias e transformando teoria em prática.
-Este espaço é meu registro desse processo — um lugar para compartilhar descobertas, experiências e pequenos experimentos que nascem da curiosidade.
-
-Também me aventuro por codificação criativa, automação e visualização de dados, unindo lógica e design em projetos que contam histórias através do código.
-
-Fora das telas, me conecto com a fotografia, a música e as noites sob as acácias 🌙, onde a arte e a tecnologia se cruzam em silêncio.
+Graduanda em Ciências Sociais - Bacharelado na Universidade Federal de Pernambuco (UFPE) e desenvolvendo um perfil acadêmico na área de Antropologia. Desempenho em pesquisas nas áreas de Antropologia da Educação, Antropologia da Religião e Antropologia Social. Complementação pedagógica em Antropologia por intermédio do Programa Institucional de Bolsas de Iniciação Cientifica (PIBIC) do Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq) e no Desenvolvimento de Projetos de Pesquisa através da cadeira acadêmica de Seminário de Pesquisa no curso de Ciências Sociais da Universidade Federal de Pernambuco (UFPE). E, adicionalmente, participante do DEVIR, Grupo de Pesquisa em Religião, Contemporaneidade, Morte e Imagens vinculado ao Programa de Pós-Graduação em Antropologia (PPGA) da Universidade Federal de Pernambuco (UFPE).
 
 <div flex-auto />
 
@@ -25,12 +22,12 @@ Fora das telas, me conecto com a fotografia, a música e as noites sob as acáci
 Minhas redes:
 
 <p flex="~ gap-2 wrap" class="mt--2!">
-  <a href="https://github.com/lukadsant" target="_blank"><span op75 i-simple-icons-github /> GitHub</a>
-  <a href="https://www.youtube.com/@lukadsant" target="_blank"><span op75 i-simple-icons-youtube /> YouTube</a>
-  <a href="https://www.instagram.com/lukadsant" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
-  <a href="https://x.com/lukadsant" target="_blank"><span op75 i-ri-twitter-x-fill /> Twitter</a>
+  <a href="http://lattes.cnpq.br/6059128932814842" target="_blank"><span op75 i-simple-icons-discourse/> Lattes</a>
+  <a href="https://www.linkedin.com/in/acaciatavares" target="_blank"><span op75 i-ri-linkedin-box-fill /> Linkedin</a>
+  <a href="https://www.instagram.com/tavar.es" target="_blank"><span op75 i-simple-icons-instagram /> Instagram</a>
+
 </p>
 
-Ou me envie um email para <span font-mono>contato<span i-carbon-at/>@lukadsant.dev</span>
+Ou me envie um email para <span font-mono>contato<span i-carbon-at/>@atavar.es</span>
 
 ---

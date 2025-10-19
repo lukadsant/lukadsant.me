@@ -1,8 +1,8 @@
 ---
-title: Demos - Anthony Fu
-display: Demos
-subtitle: Demonstrations for projects I am working on from Tweets
-description: Demonstrations for projects I am working on from Tweets
+title: Certificações - Acácia Tavares
+display: Certificações
+subtitle: Certificados e declarações
+description: Certificações
 art: dots
 ---
 
