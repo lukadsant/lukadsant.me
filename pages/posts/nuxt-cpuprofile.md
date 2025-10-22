@@ -6,7 +6,7 @@ duration: 2min
 type: note
 ---
 
-## Essas são as referencais completas, acesse o trabalho completo clicando aqui.
+## Essas são as referencais completas.
 
 BOURDIEU, Pierre. \_\_La Distinction\_\_. Paris: Minuit, 1979.
 
