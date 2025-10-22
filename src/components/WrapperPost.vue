@@ -12,10 +12,13 @@ const router = useRouter()
 const route = useRoute()
 const content = ref<HTMLDivElement>()
 
-const base = 'https://antfu.me'
-const tweetUrl = computed(() => `https://twitter.com/intent/tweet?text=${encodeURIComponent(`Reading @antfu7\'s ${base}${route.path}\n\nI think...`)}`)
-const elkUrl = computed(() => `https://elk.zone/intent/post?text=${encodeURIComponent(`Reading @antfu@m.webtoo.ls\'s ${base}${route.path}\n\nI think...`)}`)
-const blueskyUrl = computed(() => `https://bsky.app/intent/compose?text=${encodeURIComponent(`Reading @antfu.me ${base}${route.path}\n\nI think...`)}`)
+const base = 'https://atavar.es'
+const linkedinUrl = computed(() => {
+  const url = `${base}${route.path}`
+  const title = frontmatter.title ?? ''
+  const summary = frontmatter.subtitle ?? ''
+  return `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent(summary)}`
+})
 
 onMounted(() => {
   const navigate = () => {
@@ -109,7 +112,7 @@ const ArtComponent = computed(() => {
       {{ formatDate(frontmatter.date, false) }} <span v-if="frontmatter.duration">· {{ frontmatter.duration }}</span>
     </p>
     <p v-if="frontmatter.place" class="mt--4!">
-      <span op50>at </span>
+      <span op50>em </span>
       <a v-if="frontmatter.placeLink" :href="frontmatter.placeLink" target="_blank">
         {{ frontmatter.place }}
       </a>
@@ -127,7 +130,7 @@ const ArtComponent = computed(() => {
       v-if="frontmatter.draft"
       class="slide-enter" bg-orange-4:10 text-orange-4 border="l-3 orange-4" px4 py2
     >
-      This is a draft post, the content may be incomplete. Please check back later.
+      Este é um rascunho de publicação, o conteúdo pode estar incompleto. Volte mais tarde.
     </p>
   </div>
   <article
@@ -141,11 +144,8 @@ const ArtComponent = computed(() => {
     <template v-if="frontmatter.duration">
       <span font-mono op50>> </span>
       <span op50>comment on </span>
-      <a :href="blueskyUrl" target="_blank" op50>bluesky</a>
+      <a :href="linkedinUrl" target="_blank" op50>linkedin</a>
       <span op25> / </span>
-      <a :href="elkUrl" target="_blank" op50>mastodon</a>
-      <span op25> / </span>
-      <a :href="tweetUrl" target="_blank" op50>twitter</a>
     </template>
     <br>
     <span font-mono op50>> </span>
