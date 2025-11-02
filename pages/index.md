@@ -5,24 +5,23 @@ image: https://antfu.me/og.png
 art: random
 ---
 
-<div class="text-lg text-white mb-1">
+<div class="text-lg text-white mb-2">
   <!-- Espaço reservado para destaque visual -->
-  desenvolvedor Fullstack movido por curiosidade e propósito.
+  desenvolvedor Fullstack movido pela curiosidade e propósito de inovar com criatividade.
 </div>
-
   <div>
-    <div class="font-bold text-xl mb-1">About</div>
+    <h2 class="text-xl font-bold mb-2">Sobre</h2>
       Gosto de aprender desmontando ideias. Entender o “porquê” por trás das coisas me faz explorar desde os fundamentos de redes e segurança até os bastidores da inteligência artificial.
       Atualmente, estou me aprofundando em cyberops, buscando compreender como construir plataformas mais seguras, eficientes e elegantes.
-      Mas tecnologia, pra mim, vai além do código — é também expressão criativa.
+      Mas tecnologia, pra mim, vai além do código, é também expressão criativa.
       Gosto de escrever, automatizar, visualizar dados e contar histórias onde lógica e design se encontram.
 
   </div>
-  <div class="flex min-h-0 flex-col gap-y-6 mt-8">
+  <div class="flex min-h-0 flex-col gap-y-6 mt-8"></div>
   <h2 class="text-xl font-bold mb-2">Experiência profissional</h2>
 
   <!-- Engeconsult -->
-  <a href="https://engeconsult.com.br" target="_blank" class="flex rounded-lg text-card-foreground p-4 items-center gap-4 hover:shadow transition">
+  <a href="https://engeconsult.com.br" target="_blank" class="flex rounded-lg text-card-foreground p-4 items-center gap-4 ">
     <div class="flex-none">
       <img alt="Engeconsult" src="https://avatars.githubusercontent.com/u/235140303?s=200&v=4" class="rounded-full border w-12 h-12 object-contain bg-white dark:bg-gray-800" />
     </div>
@@ -62,8 +61,6 @@ art: random
 
   </a>
 
-</div>
-
 <!-- Formação -->
 <div class="flex min-h-0 flex-col gap-y-6 mt-8">
   <h2 class="text-xl font-bold mb-2 flex items-center gap-2">
@@ -78,7 +75,7 @@ art: random
     <div class="flex-grow flex flex-col">
       <div class="flex items-center justify-between gap-x-2 text-base">
         <h3 class="inline-flex items-center text-sm font-semibold">Uniamérica</h3>
-        <div class="text-right text-xs tabular-nums text-gray-500 dark:text-gray-400">2020 — 2024</div>
+        <div class="text-right text-xs tabular-nums text-gray-500 dark:text-gray-400">2023 — 2027</div>
       </div>
       <div class="font-sans text-xs mb-1">Ciência da Computação</div>
       <div class="text-xs text-gray-700 dark:text-gray-300">
@@ -95,7 +92,7 @@ art: random
     <div class="flex-grow flex flex-col">
       <div class="flex items-center justify-between gap-x-2 text-base">
         <h3 class="inline-flex items-center text-sm font-semibold">SAGA</h3>
-        <div class="text-right text-xs tabular-nums text-gray-500 dark:text-gray-400">2018 — 2019</div>
+        <div class="text-right text-xs tabular-nums text-gray-500 dark:text-gray-400">2021 — 2023</div>
       </div>
       <div class="font-sans text-xs mb-1">Computação Gráfica</div>
       <div class="text-xs text-gray-700 dark:text-gray-300">
@@ -125,11 +122,11 @@ art: random
         </a>
         <div class="px-2 flex flex-col">
           <div class="space-y-1">
-            <div class="mt-1 text-base">Coletar no chat</div>
-            <time class="font-sans text-xs">Janeiro de 2024 - Fevereiro de 2024</time>
+            <div class="mt-1 text-base">Bento</div>
+            <time class="font-sans text-xs">outubro 2025</time>
             <div class="prose dark:prose-invert max-w-full text-pretty font-sans text-xs text-muted-foreground">
               <p>
-                Com o lançamento da <a href="https://openai.com/blog/introducing-the-gpt-store">OpenAI GPT Store</a>, decidi criar um SaaS que permite aos usuários coletar endereços de e-mail de seus usuários do GPT. Esta é uma ótima maneira de construir uma audiência e monetizar o uso da API do GPT.
+                utilizando tailwind refiz o linktree com outra abordagem baseada em grids bento.
               </p>
             </div>
           </div>
@@ -137,18 +134,13 @@ art: random
         <div class="mt-auto flex flex-col px-2 text-pretty font-sans text-sm text-muted-foreground">
           <div class="mt-2 flex flex-wrap gap-1">
             <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Next.js</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Typescript</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">PostgreSQL</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Prisma</span>
             <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">TailwindCSS</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Listra</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Interface do usuário Shadcn</span>
-            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Interface mágica</span>
+            <span class="inline-flex select-none items-center border font-semibold transition-colors bg-secondary text-secondary-foreground rounded-[4px] px-1 py-0 text-[10px]">Interface do usuário</span>
           </div>
         </div>
         <div class="px-2 pb-2 flex items-center pt-2">
           <div class="flex flex-row flex-wrap items-start gap-1">
-            <a href="https://chatcollect.com" target="_blank">
+            <a href="https://lukadsant.github.io/bento" target="_blank">
               <span class="select-none rounded-full border font-semibold transition-colors bg-primary text-primary-foreground flex gap-1 px-2 py-1 text-[10px] items-center justify-center">
                 <svg width="24" height="24" stroke="currentColor" stroke-width="1.6" class="lucide-icon lucide lucide-globe size-3 mb-px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg> Site
               </span>
@@ -162,62 +154,64 @@ art: random
 </section>
 
 <!-- Projetos pessoais -->
-<div class="w-full space-y-12 py-12">
-  <div class="flex flex-col items-center justify-center space-y-4 text-center">
-    <div class="space-y-2">
+<div class="w-full space-y-8 py-8">
+  <div class="flex flex-col items-center justify-center space-y-3 text-center">
+    <div class="space-y-1">
       <div class="inline-block rounded-lg bg-foreground px-3 py-1 text-sm text-background">Hackathons</div>
-      <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">Eu gosto de construir coisas</h2>
-      <p class="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-        Durante meu período na universidade, participei de mais de <strong>21 hackathons</strong>. Pessoas de todo o país se reuniam e construíam coisas incríveis em 2 ou 3 dias. Foi revelador ver as infinitas possibilidades que um grupo de indivíduos motivados e apaixonados ganhava vida.
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">Eu gosto de construir coisas</h2>
+      <p class="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed max-w-2xl mx-auto">
+        Durante meu período na universidade, tenho participado de equipes, hackathons e projetos. Pessoas de todo o lugar reunidas para construir coisas impactantes em tempo limitado. Foi revelador ver as infinitas possibilidades que um grupo de indivíduos motivados e apaixonados ganhava vida.
       </p>
     </div>
   </div>
-  <ul class="mb-4 ml-4 divide-y divide-dashed border-l">
-    <!-- Exemplo de hackathon -->
-    <li class="relative ml-10 py-4">
-      <div class="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-white">
-        <div class="relative flex shrink-0 overflow-hidden rounded-full m-auto size-12 border">
-          <img alt="Hack Western 5" src="https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png" class="aspect-square h-full w-full object-contain" />
-        </div>
-      </div>
-      <div class="flex flex-1 flex-col justify-start gap-1">
-        <time class="text-xs text-muted-foreground">23 a 25 de novembro de 2018</time>
-        <h2 class="font-semibold leading-none">Hack Western 5</h2>
-        <p class="text-sm text-muted-foreground">Londres, Ontário</p>
-        <span class="prose dark:prose-invert text-sm text-muted-foreground">
-          Desenvolvi um aplicativo móvel que entrega histórias para crianças na hora de dormir usando realidade aumentada.
-        </span>
-      </div>
-    </li>
-    <li class="relative ml-10 py-4">
-      <div class="absolute -left-16 top-2 flex items-center justify-center rounded-full bg-white">
-        <div class="relative flex shrink-0 overflow-hidden rounded-full m-auto size-12 border">
-          <img alt="Hackear o Norte" src="https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png" class="aspect-square h-full w-full object-contain" />
-        </div>
-      </div>
-      <div class="flex flex-1 flex-col justify-start gap-1">
-        <time class="text-xs text-muted-foreground">14 a 16 de setembro de 2018</time>
-        <h2 class="font-semibold leading-none">Hackear o Norte</h2>
-        <p class="text-sm text-muted-foreground">Waterloo, Ontário</p>
-        <span class="prose dark:prose-invert text-sm text-muted-foreground">
-          Desenvolvi um aplicativo móvel que transmite eventos de todo o campus universitário em tempo real para todos os alunos.
-        </span>
-      </div>
-    </li>
-    <!-- Adicione mais hackathons conforme necessário -->
-  </ul>
-</div>
 
-<!-- Áreas de interesse -->
-<div class="mb-6">
-  <h2 class="text-xl font-bold mb-2 flex items-center gap-2">
-    <span class="i-carbon-settings text-green-500"></span> Áreas de interesse
-  </h2>
-  <ul class="list-disc pl-5">
-    <li>Infraestrutura e segurança (CyberOps, redes, DevSecOps)</li>
-    <li>Inteligência artificial e automação</li>
-    <li>Codificação criativa e visualização de dados</li>
-    <li>Design de sistemas e arquitetura de software</li>
+  <ul style="--tw-prose-bullets: none;" class="list-none prose-li:before:hidden mb-4 ml-4 divide-y divide-dashed border-l">
+    <!-- Exemplo de hackathon -->
+    <li class="relative ml-10 py-3 ">
+      <!-- Ícone circular -->
+      <div class="absolute -left-16 top-12 flex items-center justify-center rounded-full bg-white border size-12 overflow-hidden">
+        <img
+          alt="Hack Western 5"
+          src="https://pbs.twimg.com/profile_images/1952207648868151296/a-8BkXmD_400x400.jpg"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div class="flex flex-1 flex-col justify-start">
+        <h2 class="font-semibold leading-tight">Berolab Session 3</h2>
+        <time class="text-xs text-muted-foreground">novembro de 2025</time>
+        <p>Ansioso para saber o que vou construir aqui, em breve trago atualizações.</p>
+      </div>
+    </li>
+    <li class="relative ml-10 py-3 ">
+      <!-- Ícone circular -->
+      <div class="absolute -left-16 top-12 flex items-center justify-center rounded-full bg-white border size-12 overflow-hidden">
+        <img
+          alt="Hack Western 5"
+          src="https://pbs.twimg.com/profile_images/1591152551042420752/5E1Jx1JA_400x400.jpg"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div class="flex flex-1 flex-col justify-start">
+        <h2 class="font-semibold leading-tight">Programa FAST 2025</h2>
+        <time class="text-xs text-muted-foreground">novembro de 2024</time>
+        <p>Na turma de engenharia de plataforma criei uma ferramente para validadora de MVP`s.</p>
+      </div>
+    </li>
+    <li class="relative ml-10 py-3 ">
+      <!-- Ícone circular -->
+      <div class="absolute -left-16 top-12 flex items-center justify-center rounded-full bg-white border size-12 overflow-hidden">
+        <img
+          alt="Hack Western 5"
+          src="https://avatars.githubusercontent.com/u/26231823?s=200&v=4"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div class="flex flex-1 flex-col justify-start">
+        <h2 class="font-semibold leading-tight">7º Dio Campus Expert</h2>
+        <time class="text-xs text-muted-foreground">novembro de 2024</time>
+        <p>Realizei a criação de simples jogos web com javascript puro.</p>
+      </div>
+    </li>
   </ul>
 </div>
 
