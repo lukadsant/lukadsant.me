@@ -9,6 +9,7 @@ projects:
     - name: 'Vite DevTools'
       link: 'https://github.com/vitejs/devtools'
       desc: 'Inspect the intermediate state of Vite bundle and pipeline'
+      type: 'code'
       icon: 'i-simple-icons-vite'
     - name: 'Nuxt DevTools'
       link: 'https://github.com/nuxt/devtools'
@@ -289,6 +290,7 @@ projects:
     - name: '100 Day'
       link: 'https://100.antfu.me/'
       desc: 'My 100 day challenge of exploring design, compform, and new things.'
+      type: 'design'
       icon: 'i-carbon-app-switcher'
     - name: 'Codecember'
       link: 'https://github.com/codecember-ink/codecember'
@@ -297,6 +299,7 @@ projects:
     - name: 'p5i'
       link: 'https://github.com/antfu/p5i'
       desc: 'p5.js, but with more friendly instance mode APIs'
+      type: 'design'
       icon: 'i-carbon-paint-brush'
 
   TypeScript:

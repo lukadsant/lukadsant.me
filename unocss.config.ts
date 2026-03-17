@@ -1,11 +1,7 @@
 import {
-  createLocalFontProcessor,
-} from '@unocss/preset-web-fonts/local'
-import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetWebFonts,
   presetWind3,
   transformerDirectives,
 } from 'unocss'
@@ -16,9 +12,30 @@ export default defineConfig({
       'bg-base': 'bg-white dark:bg-black',
       'color-base': 'text-black dark:text-white',
       'border-base': 'border-[#8884]',
+      'gundam-yellow': 'bg-[#f4c542] text-black',
+      'gundam-red': 'bg-[#dc2626] text-white',
+      'gundam-black': 'bg-black text-white',
+      'gundam-stripes': 'relative before:content-[""] before:absolute before:inset-0 before:bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,rgba(0,0,0,0.1)_10px,rgba(0,0,0,0.1)_20px)] before:pointer-events-none',
     },
     [/^btn-(\w+)$/, ([_, color]) => `op50 px2.5 py1 transition-all duration-200 ease-out no-underline! hover:(op100 text-${color} bg-${color}/10) border border-base! rounded`],
   ],
+  theme: {
+    colors: {
+      gundam: {
+        yellow: '#f4c542',
+        red: '#dc2626',
+        black: '#000000',
+        gray: '#2a2a2a',
+        blue: '#60a5fa',
+        green: '#4ade80',
+      },
+    },
+    fontFamily: {
+      sans: 'var(--font-sans)',
+      mono: 'var(--font-mono)',
+      display: 'var(--font-display)',
+    },
+  },
   rules: [
     [/^slide-enter-(\d+)$/, ([_, n]) => ({
       '--enter-stage': n,
@@ -35,15 +52,16 @@ export default defineConfig({
     }),
     presetAttributify(),
     presetWind3(),
-    presetWebFonts({
-      fonts: {
-        sans: 'Inter',
-        mono: 'DM Mono',
-        condensed: 'Roboto Condensed',
-        wisper: 'Bad Script',
-      },
-      processors: createLocalFontProcessor(),
-    }),
+    // presetWebFonts({
+    //   fonts: {
+    //     sans: 'Inter',
+    //     mono: 'Space Mono',
+    //     display: 'Bebas Neue',
+    //     condensed: 'Roboto Condensed',
+    //     wisper: 'Bad Script',
+    //   },
+    //   processors: createLocalFontProcessor(),
+    // }),
   ],
   transformers: [
     transformerDirectives(),

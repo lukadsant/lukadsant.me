@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUNDAM - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --yellow-primary: #f4c542;
+        --yellow-dark: #d4a029;
+        --black: #000000;
+        --red: #dc2626;
+        --white: #ffffff;
+        --gray: #2a2a2a;
+        --green-mecha: #4ade80;
+        --blue-tech: #60a5fa;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Space Mono', monospace;
+        background: var(--black);
+        color: var(--white);
+        overflow-x: hidden;
+      }
+
+      /* Header Section */
+      .header {
+        background: var(--yellow-primary);
+        padding: 60px 20px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 10px,
+          rgba(0, 0, 0, 0.1) 10px,
+          rgba(0, 0, 0, 0.1) 20px
+        );
+        pointer-events: none;
+      }
+
+      .header-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+      }
+
+      .header-left {
+        flex: 1;
+      }
+
+      .header-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 10px;
+      }
+
+      .logo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(4rem, 12vw, 8rem);
+        line-height: 0.85;
+        letter-spacing: -4px;
+        color: var(--black);
+        font-weight: 900;
+      }
+
+      .poster-label {
+        font-family: 'Space Mono', monospace;
+        font-size: 14px;
+        font-weight: 700;
+        color: var(--black);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        letter-spacing: 2px;
+      }
+
+      .tagline {
+        font-size: 18px;
+        color: var(--black);
+        font-weight: 700;
+        letter-spacing: 2px;
+      }
+
+      /* Mecha Frame in Header */
+      .header-mecha {
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .mecha-frame {
+        width: clamp(280px, 35vw, 450px);
+        aspect-ratio: 1;
+        background: var(--gray);
+        border: 8px solid var(--red);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 40px rgba(220, 38, 38, 0.4);
+      }
+
+      .mecha-sprite {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: clamp(80px, 12vw, 140px);
+        background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      }
+
+      .mecha-label {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+        background: var(--red);
+        color: var(--white);
+        padding: 10px 25px;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 22px;
+        letter-spacing: 2px;
+        z-index: 2;
+      }
+
+      /* Toggle Section */
+      .toggle-section {
+        background: var(--black);
+        padding: 40px 20px;
+        border-top: 4px solid var(--yellow-primary);
+        border-bottom: 4px solid var(--yellow-primary);
+      }
+
+      .toggle-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 0;
+      }
+
+      .toggle-btn {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 32px;
+        padding: 20px 60px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        letter-spacing: 2px;
+        font-weight: 900;
+      }
+
+      .toggle-btn.code {
+        background: var(--white);
+        color: var(--black);
+      }
+
+      .toggle-btn.art {
+        background: var(--black);
+        color: var(--white);
+        border: 3px solid var(--white);
+      }
+
+      .toggle-btn:hover {
+        transform: translateY(-2px);
+      }
+
+      .toggle-btn.code:hover {
+        background: var(--yellow-primary);
+      }
+
+      .toggle-btn.art:hover {
+        background: var(--red);
+        border-color: var(--red);
+      }
+
+      /* Hero Section - Info Boxes */
+      .hero {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px;
+      }
+
+      .info-box {
+        background: var(--yellow-primary);
+        color: var(--black);
+        padding: 30px;
+        position: relative;
+      }
+
+      .info-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 2px,
+          rgba(0, 0, 0, 0.05) 2px,
+          rgba(0, 0, 0, 0.05) 4px
+        );
+        pointer-events: none;
+      }
+
+      .info-box h2 {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 36px;
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+      }
+
+      .info-box p {
+        font-size: 14px;
+        line-height: 1.8;
+        font-weight: 400;
+      }
+
+      /* Projects Section */
+      .projects-section {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .section-header {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 50px;
+      }
+
+      .section-title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: clamp(3rem, 8vw, 5rem);
+        color: var(--yellow-primary);
+        letter-spacing: 2px;
+      }
+
+      .section-line {
+        flex: 1;
+        height: 4px;
+        background: var(--yellow-primary);
+      }
+
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 40px;
+      }
+
+      .project-card {
+        background: var(--gray);
+        border: 3px solid var(--yellow-primary);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 40px rgba(244, 197, 66, 0.3);
+      }
+
+      .project-image {
+        width: 100%;
+        height: 250px;
+        background: var(--black);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        border-bottom: 3px solid var(--yellow-primary);
+      }
+
+      .project-info {
+        padding: 30px;
+      }
+
+      .project-title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 28px;
+        color: var(--yellow-primary);
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+
+      .project-description {
+        color: #ccc;
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+      }
+
+      .project-frame {
+        border: 2px solid var(--blue-tech);
+        padding: 15px;
+        background: rgba(96, 165, 250, 0.05);
+        font-size: 12px;
+        color: var(--blue-tech);
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      /* Footer decorative element */
+      .robot-arm {
+        position: fixed;
+        bottom: -100px;
+        right: 40px;
+        width: 200px;
+        height: 300px;
+        pointer-events: none;
+        z-index: 10;
+      }
+
+      .robot-arm-visual {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+        opacity: 0.3;
+      }
+
+      /* Responsive */
+      @media (max-width: 968px) {
+        .header-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 40px;
+        }
+
+        .header-mecha {
+          align-self: center;
+        }
+
+        .mecha-frame {
+          width: clamp(250px, 60vw, 350px);
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .toggle-btn {
+          font-size: 24px;
+          padding: 15px 40px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .header {
+          padding: 40px 20px;
+        }
+
+        .header-top {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .poster-label {
+          writing-mode: horizontal-tb;
+        }
+
+        .mecha-frame {
+          width: 100%;
+          max-width: 300px;
+        }
+
+        .toggle-container {
+          flex-direction: column;
+          gap: 20px;
+        }
+
+        .toggle-btn {
+          width: 100%;
+        }
+
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .projects-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .robot-arm {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="header-left">
+          <div class="header-top">
+            <div>
+              <h1 class="logo">GUNDAM</h1>
+              <p class="tagline">PORTFOLIO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-mecha">
+          <div class="mecha-frame">
+            <div class="mecha-sprite">🤖</div>
+          </div>
+          <div class="mecha-label">RX-78-2</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Toggle Section -->
+    <section class="toggle-section">
+      <div class="toggle-container">
+        <button class="toggle-btn code">CODE</button>
+        <button class="toggle-btn art">ART</button>
+      </div>
+    </section>
+
+    <!-- Hero Section - Featured Projects -->
+    <section class="hero">
+      <div class="info-box">
+        <h2>SPA BOOKING WEB</h2>
+        <p>A web application that streamlines spa appointment scheduling for both customers and spa administrators.</p>
+      </div>
+
+      <div
+        class="info-box"
+        style="background: var(--black); color: var(--yellow-primary); border: 3px solid var(--yellow-primary)"
+      >
+        <h2>BLOG WEBSITE</h2>
+        <p>Blog website where users can read blogs. The blogs are gotten from geany api.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="section-header">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-image">💻</div>
+          <div class="project-info">
+            <h3 class="project-title">SPA BOOKING WEB</h3>
+            <p class="project-description">
+              A web application that streamlines spa appointment scheduling for both customers and spa administrators.
+            </p>
+            <div class="project-frame">TECH STACK: REACT • NODE.JS • MONGODB</div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-image">📝</div>
+          <div class="project-info">
+            <h3 class="project-title">BLOG WEBSITE</h3>
+            <p class="project-description">
+              Blog website where users can read blogs. The blogs are gotten from geany api.
+            </p>
+            <div
+              class="project-frame"
+              style="border-color: var(--green-mecha); background: rgba(74, 222, 128, 0.05); color: var(--green-mecha)"
+            >
+              TECH STACK: VUE.JS • API • JAVASCRIPT
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card">
+          <div class="project-image">🎮</div>
+          <div class="project-info">
+            <h3 class="project-title">E-COMMERCE PLATFORM</h3>
+            <p class="project-description">
+              Full-featured e-commerce platform with cart management, payment integration, and admin dashboard.
+            </p>
+            <div
+              class="project-frame"
+              style="border-color: var(--red); background: rgba(220, 38, 38, 0.05); color: var(--red)"
+            >
+              TECH STACK: NEXT.JS • STRIPE • PRISMA
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card">
+          <div class="project-image">📊</div>
+          <div class="project-info">
+            <h3 class="project-title">ANALYTICS DASHBOARD</h3>
+            <p class="project-description">
+              Real-time analytics dashboard with data visualization, custom reports, and performance metrics.
+            </p>
+            <div class="project-frame">TECH STACK: REACT • D3.JS • FIREBASE</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Decorative Robot Arm -->
+    <div class="robot-arm">
+      <div class="robot-arm-visual">🦾</div>
+    </div>
+
+    <script>
+      // Placeholder para futuras interações
+      console.log('🤖 GUNDAM Portfolio MVP - Static Version')
+    </script>
+  </body>
+</html>

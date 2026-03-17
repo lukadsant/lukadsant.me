@@ -190,6 +190,11 @@ export default defineConfig({
         'vue',
         VueRouterAutoImports,
         '@vueuse/core',
+        {
+          '~/store/portfolio': [
+            'usePortfolioStore',
+          ],
+        },
       ],
     }),
 

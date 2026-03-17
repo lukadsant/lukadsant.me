@@ -5,6 +5,14 @@ import antfu from '@antfu/eslint-config'
 export default antfu(
   {
     formatters: true,
+    ignores: [
+      '**/*.png',
+      '**/*.jpg',
+      '**/*.jpeg',
+      '**/*.gif',
+      '**/*.webp',
+      'pnpm-lock.yaml',
+    ],
     markdown: {
       overrides: {
       },

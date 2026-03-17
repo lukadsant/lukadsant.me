@@ -1,131 +1,83 @@
 <script setup lang="ts">
-defineProps<{ projects: Record<string, any[]> }>()
+import { usePortfolioStore } from '~/store/portfolio'
 
-function slug(name: string) {
-  return name.toLowerCase().replace(/[\s\\/]+/g, '-')
-}
+defineProps<{ projects: Record<string, any[]> }>()
+const portfolio = usePortfolioStore()
 </script>
 
 <template>
-  <div class="max-w-300 mx-auto">
-    <p text-center mt--6 mb5 op50 text-lg italic>
-      Projects that I created or maintaining.
-    </p>
-    <div class="prose pb5 mx-auto mt10 text-center">
-      <div flex="~ gap-2 justify-center">
-        <a
-          href="https://github.com/antfu"
-          target="_blank"
-          class="group btn-blue inline-block"
-        >
-          <div
-            i-ph-github-logo-duotone
-            group-hover="i-ph-github-logo-fill text-blue"
-          />
-          GitHub
-        </a>
-        <a
-          href="https://releases.antfu.me"
-          target="_blank"
-          class="group btn-amber inline-block"
-        >
-          <div
-            i-ph-rocket-launch-duotone
-            group-hover="i-ph-rocket-launch-fill text-amber"
-          />
-          Recent Releases
-        </a>
-        <a
-          href="https://yak.antfu.me"
-          target="_blank"
-          class="group btn-lime inline-block"
-        >
-          <div
-            i-ph-cow-duotone
-            group-hover="i-ph-cow-duotone-fill text-lime"
-          />
-          Yak Map
-        </a>
-      </div>
-      <hr>
-    </div>
+  <div class="gundam-projects max-w-350 mx-auto">
+    <!-- Projects Section -->
     <div
-      v-for="key, cidx in Object.keys(projects)" :key="key" slide-enter
+      v-for="key, cidx in Object.keys(projects)"
+      v-show="projects[key].some(p => portfolio.currentView === 'all' || p.type === portfolio.currentView)"
+      :key="key"
+      class="mb-20"
+      slide-enter
       :style="{ '--enter-stage': cidx + 1 }"
     >
-      <div
-        :id="slug(key)"
-        select-none relative h18 mt5 pointer-events-none slide-enter
-        :style="{
-          '--enter-stage': cidx - 2,
-          '--enter-step': '60ms',
-        }"
-      >
-        <span text-5em color-transparent absolute left--1rem top-0rem font-bold leading-1em text-stroke-1.5 text-stroke-hex-aaa op35 dark:op20>{{ key }}</span>
+      <!-- Section Header with Line -->
+      <div class="flex items-center gap-5 mb-10 overflow-hidden">
+        <h3 class="font-display text-4xl md:text-6xl text-gundam-yellow tracking-widest uppercase flex-shrink-0">
+          {{ key }}
+        </h3>
+        <div class="flex-1 h-1 bg-gundam-yellow" />
+        <div class="w-10 h-10 border-2 border-gundam-red rotate-45 flex-shrink-0" />
       </div>
+
+      <!-- Projects Grid -->
       <div
-        class="project-grid py-2 max-w-500 w-max mx-auto"
-        grid="~ cols-1 md:cols-2 gap-4 lg:cols-3"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
       >
         <a
           v-for="item, idx in projects[key]"
+          v-show="portfolio.currentView === 'all' || item.type === portfolio.currentView"
           :key="idx"
-          class="item relative flex items-center"
+          class="project-card group bg-gundam-gray border-3 border-gundam-yellow p-0 flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_10px_40px_rgba(244,197,66,0.3)]"
           :href="item.link"
           target="_blank"
-          :title="item.name"
         >
-          <div v-if="item.icon" class="pt-2 pr-5">
-            <Slidev v-if="item.icon === 'slidev'" class="text-4xl opacity-50" />
-            <VueUse v-else-if="item.icon === 'vueuse'" class="text-4xl opacity-50" />
-            <VueReactivity v-else-if="item.icon === 'vue-reactivity'" class="text-4xl opacity-50" />
-            <VueDemi v-else-if="item.icon === 'vue-demi'" class="text-4xl opacity-50" />
-            <Unocss v-else-if="item.icon === 'unocss'" class="text-4xl opacity-50" />
-            <Vitest v-else-if="item.icon === 'vitest'" class="text-4xl opacity-50" />
-            <Elk v-else-if="item.icon === 'elk'" class="text-4xl opacity-50" />
-            <AnthonyFu v-else-if="item.icon === 'af'" class="text-4xl opacity-50" />
-            <div v-else class="text-3xl opacity-50" :class="item.icon || 'i-carbon-unknown'" />
+          <!-- Image Placeholder / Thumbnail -->
+          <div class="h-45 bg-black border-b-3 border-gundam-yellow flex items-center justify-center overflow-hidden relative">
+            <div class="text-6xl transition-transform duration-500 group-hover:scale-120">
+              <div v-if="item.icon?.startsWith('i-')" :class="item.icon" />
+              <Slidev v-else-if="item.icon === 'slidev'" />
+              <VueUse v-else-if="item.icon === 'vueuse'" />
+              <Unocss v-else-if="item.icon === 'unocss'" />
+              <Vitest v-else-if="item.icon === 'vitest'" />
+              <span v-else>🚀</span>
+            </div>
+            <!-- Decorative diagonal stripes in corner -->
+            <div class="absolute top-0 right-0 w-15 h-15 bg-gundam-red/20 translate-x-1/2 -translate-y-1/2 rotate-45" />
           </div>
-          <div class="flex-auto">
-            <div class="text-normal">{{ item.name }}</div>
-            <div class="desc text-sm opacity-50 font-normal" v-html="item.desc" />
+
+          <!-- Project Info -->
+          <div class="p-6 flex flex-col flex-1">
+            <h4 class="font-display text-2xl text-gundam-yellow tracking-wider mb-3 uppercase group-hover:text-white transition-colors">
+              {{ item.name }}
+            </h4>
+            <p class="font-mono text-sm text-gray-400 leading-relaxed mb-6 line-clamp-2">
+              {{ item.desc }}
+            </p>
+
+            <!-- Tech Stack Frame -->
+            <div class="mt-auto border-2 border-gundam-blue bg-gundam-blue/5 p-3 font-mono text-[10px] text-gundam-blue tracking-widest uppercase">
+              SECTOR: {{ item.type || 'SYSTEM' }} // STATUS: ONLINE
+            </div>
           </div>
         </a>
       </div>
-    </div>
-    <div class="prose pb5 mx-auto mt10 text-center">
-      <div block mt-5>
-        <a href="https://antfu.me/stars-rank" target="_blank" op50>All projects sort by Stars</a>
-      </div>
-      <hr>
-      <SponsorButtons />
-    </div>
-  </div>
-  <div>
-    <div class="table-of-contents">
-      <div class="table-of-contents-anchor">
-        <div class="i-ri-menu-2-fill" />
-      </div>
-      <ul>
-        <li v-for="key of Object.keys(projects)" :key="key">
-          <a :href="`#${slug(key)}`">{{ key }}</a>
-        </li>
-      </ul>
     </div>
   </div>
 </template>
 
 <style scoped>
-.project-grid a.item {
-  background: transparent;
-  font-size: 1.1rem;
-  width: 350px;
-  max-width: 100%;
-  padding: 0.5rem 0.875rem 0.875rem;
-  border-radius: 6px;
+.gundam-projects {
+  --enter-step: 100ms;
 }
 
-.project-grid a.item:hover {
-  background: #88888811;
+.project-card {
+  /* Mantém as bordas nítidas */
+  image-rendering: pixelated;
 }
 </style>
