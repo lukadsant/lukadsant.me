@@ -386,8 +386,6 @@ function scrollToExplore() {
                   class="toggle-btn code"
                   :class="{ active: store.currentView === 'code' }"
                   @click="handleBtnClick('code', $event)"
-                  @mouseenter="hoveredView = 'code'"
-                  @mouseleave="hoveredView = null"
                 >
                   <span class="i-carbon-terminal" />
                   DEV
@@ -397,8 +395,6 @@ function scrollToExplore() {
                   class="toggle-btn art"
                   :class="{ active: store.currentView === 'design' }"
                   @click="handleBtnClick('design', $event)"
-                  @mouseenter="hoveredView = 'design'"
-                  @mouseleave="hoveredView = null"
                 >
                   <span class="i-carbon-palette" />
                   ART
@@ -466,6 +462,8 @@ function scrollToExplore() {
 
 .gundam-poster {
   width: 100%;
+  max-width: 100vw;
+  overflow-x: clip;
 }
 
 /* ========================================
@@ -552,13 +550,6 @@ function scrollToExplore() {
   gap: 60px;
 }
 
-@media (max-width: 1024px) {
-  .header-content {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
-
 /* ========================================
    LEFT COLUMN - Logo & Value Prop
    ======================================== */
@@ -568,12 +559,6 @@ function scrollToExplore() {
   flex-direction: column;
   gap: 25px;
   max-width: 700px;
-}
-
-@media (max-width: 1024px) {
-  .header-left {
-    max-width: 100%;
-  }
 }
 
 /* Logo */
@@ -787,12 +772,6 @@ function scrollToExplore() {
   justify-self: end;
 }
 
-@media (max-width: 1024px) {
-  .header-mecha {
-    justify-self: center;
-  }
-}
-
 .mecha-frame {
   width: clamp(280px, 35vw, 420px);
   aspect-ratio: 1;
@@ -902,49 +881,208 @@ function scrollToExplore() {
 }
 
 /* ========================================
+   ROBOT ARM
+   ======================================== */
+.robot-arm {
+  position: fixed;
+  bottom: -100px;
+  right: 40px;
+  width: 200px;
+  height: 300px;
+  pointer-events: none;
+  opacity: 0.3;
+  z-index: 10;
+}
+
+.robot-arm-visual {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  filter: grayscale(1);
+  transition: filter 1s ease;
+}
+
+/* ========================================
    RESPONSIVE
    ======================================== */
 
-@media (max-width: 640px) {
+/* ========================================
+   MOBILE OPTIMIZED LAYOUT
+   ======================================== */
+
+@media (max-width: 1024px) {
+  .header-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .header-mecha {
+    justify-self: center;
+    width: 100%; /* Add explicit width to prevent collapse */
+    display: flex;
+    justify-content: center;
+    order: -1; /* Mecha on top */
+  }
+
+  .header-left {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
   .gundam-header {
-    padding: 60px 20px;
+    padding: 50px 15px 80px;
+    margin: -60px -15px 0;
+  }
+
+  .header-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      'logo photo'
+      'value value';
+    gap: 0;
+    row-gap: 25px;
+    align-items: center;
+  }
+
+  .header-left {
+    display: contents; /* Flatten to allow children to act as grid items */
+  }
+
+  .logo-container {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .logo {
-    font-size: 4rem;
+    font-size: clamp(2.2rem, 9vw, 3.5rem);
+    line-height: 0.9;
+  }
+
+  .tagline {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .header-mecha {
+    grid-area: photo;
+    width: 110px;
+    height: 110px;
+    margin: 0;
+    order: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .mecha-frame {
     width: 100%;
-    max-width: 350px;
+    height: 100%;
+    max-width: none;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    transform: none !important;
   }
 
-  .toggle-buttons {
-    flex-direction: column;
+  .mecha-frame:hover {
+    transform: scale(1.05) !important;
   }
 
-  .toggle-btn {
-    width: 100%;
-    font-size: 24px;
-    padding: 12px 30px;
+  .hero-badge,
+  .mecha-label {
+    display: none !important;
   }
 
   .value-proposition {
-    padding: 20px 25px 65px;
+    grid-area: value;
+    max-width: 100%;
+    padding: 20px 20px 60px;
+    margin-top: 5px;
   }
 
-  .scroll-indicator {
-    display: none;
+  .value-title {
+    font-size: 22px;
   }
 
+  .value-description {
+    font-size: 14px;
+  }
+
+  .tech-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  /* 3-button layout on mobile */
+  .hero-toggle {
+    left: 15px;
+    right: 15px;
+    bottom: -20px;
+  }
+
+  .toggle-buttons {
+    gap: 8px;
+  }
+
+  .toggle-btn {
+    font-size: 14px;
+    padding: 12px 10px;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .toggle-btn span[class^='i-'] {
+    font-size: 20px;
+  }
+
+  .scroll-indicator,
   .robot-arm {
     display: none;
   }
 
-  .poster-label {
-    writing-mode: horizontal-tb;
-    top: 15px;
-    right: 15px;
+  .corner-accent {
+    width: 100px;
+    height: 100px;
+  }
+
+  .projects-section {
+    padding: 40px 15px;
+    border-top: 4px solid var(--yellow-primary);
+  }
+}
+
+/* Small phones */
+@media (max-width: 375px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .header-mecha {
+    width: 90px;
+    height: 90px;
+  }
+
+  .value-title {
+    font-size: 20px;
+  }
+
+  .value-description {
+    font-size: 13px;
+  }
+
+  .toggle-btn {
+    font-size: 12px;
   }
 }
 

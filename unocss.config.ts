@@ -29,11 +29,41 @@ export default defineConfig({
         blue: '#60a5fa',
         green: '#4ade80',
       },
+      sage: {
+        DEFAULT: '#87A483',
+        light: '#A5C0A1',
+        dark: '#6C8B68',
+      },
+      forest: {
+        DEFAULT: '#18311B',
+        light: '#2A4A2E',
+      },
+      lime: {
+        DEFAULT: '#D6F34C',
+        hover: '#E3FA75',
+      },
+      offwhite: '#F8F9F5',
+      blue: {
+        main: '#5C8DB8',
+        dark: '#2F4F6F',
+        light: '#A7C7E7',
+      },
+      green: {
+        vibrant: '#7ED957',
+        dark: '#2E7D32',
+      },
+      neutral: {
+        soft: '#F5F7FA',
+        light: '#DCE3EA',
+        dark: '#2B2B2B',
+      },
     },
     fontFamily: {
       sans: 'var(--font-sans)',
       mono: 'var(--font-mono)',
       display: 'var(--font-display)',
+      outfit: '"Outfit", sans-serif',
+      inter: '"Inter", sans-serif',
     },
   },
   rules: [
