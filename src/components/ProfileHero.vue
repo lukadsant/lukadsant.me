@@ -4,11 +4,14 @@ import { ref } from 'vue'
 const hoveredAction = ref<'dev' | 'design' | null>(null)
 const laserCanvas = ref<HTMLCanvasElement | null>(null)
 const avatarRef = ref<HTMLImageElement | null>(null)
-const devBtnRef = ref<HTMLButtonElement | null>(null)
-const designBtnRef = ref<HTMLButtonElement | null>(null)
+const devBtnRef = ref<HTMLElement | null>(null)
+const designBtnRef = ref<HTMLElement | null>(null)
 
-function scrollToProjects() {
-  const el = document.getElementById('projects')
+const LASER_DURATION = 500
+const FLAMETHROWER_DURATION = 900
+
+function scrollToSection(id: string) {
+  const el = document.getElementById(id)
   if (el) {
     el.scrollIntoView({ behavior: 'smooth' })
   }
@@ -233,12 +236,14 @@ function fireFlamethrower(event: MouseEvent) {
 
 function handleDevClick(event: MouseEvent) {
   fireLaser(event)
-  setTimeout(() => scrollToProjects(), 500)
+  setTimeout(() => {
+    window.open('https://wa.me/5581994880289', '_blank', 'noopener,noreferrer')
+  }, LASER_DURATION)
 }
 
 function handleDesignClick(event: MouseEvent) {
   fireFlamethrower(event)
-  setTimeout(() => scrollToProjects(), 800)
+  setTimeout(() => scrollToSection('process'), FLAMETHROWER_DURATION)
 }
 </script>
 
@@ -282,10 +287,10 @@ function handleDesignClick(event: MouseEvent) {
           Luka D'Sant
         </h1>
         <p class="text-white/90 font-inter font-medium mt-3 md:mt-6 text-[15px] md:text-xl">
-          Full Stack Developer & Designer
+          Crio sites e sistemas simples para organizar seu negócio e economizar tempo.
         </p>
         <p class="text-white/80 font-inter text-[13px] md:text-base mt-2 md:mt-4 leading-snug w-[60%] md:w-[50%]">
-          Engineering backend systems, interfaces and digital experiences.
+          De páginas profissionais a automações, transformo tarefas confusas em soluções claras e fáceis de usar.
         </p>
       </div>
 
@@ -294,33 +299,33 @@ function handleDesignClick(event: MouseEvent) {
         <div class="flex flex-wrap gap-3">
           <button
             ref="devBtnRef"
-            class="bg-green-vibrant text-blue-dark font-inter text-xs md:text-sm font-black uppercase px-5 py-3 rounded-xl tracking-wider shadow-sm hover:bg-green-vibrant/90 transition-colors cursor-pointer"
+            class="bg-green-vibrant text-blue-dark font-inter text-xs md:text-sm font-black uppercase px-5 py-3 rounded-xl tracking-wider shadow-sm hover:bg-green-vibrant/90 transition-colors cursor-pointer inline-flex items-center justify-center"
             @click="handleDevClick"
             @mouseenter="hoveredAction = 'dev'"
             @mouseleave="hoveredAction = null"
           >
-            SEE DEV PROJECTS
+            COMEÇAR MEU PROJETO
           </button>
           <button
             ref="designBtnRef"
-            class="bg-white/10 border border-white/20 text-white font-inter text-xs md:text-sm font-black uppercase px-5 py-3 rounded-xl tracking-wider shadow-sm hover:bg-white/20 transition-colors cursor-pointer"
+            class="bg-white/10 border border-white/20 text-white font-inter text-xs md:text-sm font-black uppercase px-5 py-3 rounded-xl tracking-wider shadow-sm hover:bg-white/20 transition-colors cursor-pointer inline-flex items-center justify-center"
             @click="handleDesignClick"
             @mouseenter="hoveredAction = 'design'"
             @mouseleave="hoveredAction = null"
           >
-            SEE DESIGN PROJECTS
+            VER COMO FUNCIONA
           </button>
         </div>
 
         <div class="flex gap-2">
-          <a href="https://github.com/lukadsant" target="_blank" rel="noopener noreferrer" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="GitHub">
-            <div class="i-lucide-github w-5 h-5 md:w-6 md:h-6 text-white" />
+          <a href="https://wa.me/5581994880289" target="_blank" rel="noopener noreferrer" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="WhatsApp">
+            <div class="i-lucide-message-circle w-5 h-5 md:w-6 md:h-6 text-white" />
           </a>
-          <a href="https://linkedin.com/in/lukadsant" target="_blank" rel="noopener noreferrer" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="LinkedIn">
-            <div class="i-lucide-linkedin w-5 h-5 md:w-6 md:h-6 text-white" />
+          <a href="mailto:contato@lukadsant.dev" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="Email">
+            <div class="i-lucide-mail w-5 h-5 md:w-6 md:h-6 text-white" />
           </a>
-          <a href="/curriculo_luka_2025.pdf" download="Luka_DSant_CV.pdf" target="_blank" rel="noopener noreferrer" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="Download CV">
-            <div class="i-lucide-file-text w-5 h-5 md:w-6 md:h-6 text-white" />
+          <a href="#projects" class="w-11 h-11 md:w-14 md:h-14 bg-white/10 rounded-xl flex items-center justify-center cursor-pointer hover:bg-white/20 transition" title="Projetos">
+            <div class="i-lucide-briefcase w-5 h-5 md:w-6 md:h-6 text-white" />
           </a>
         </div>
       </div>

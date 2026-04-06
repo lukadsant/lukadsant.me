@@ -7,11 +7,11 @@ defineProps<{ projects: Record<string, any[]> }>()
     <div class="flex justify-between items-center mb-6">
       <h2 class="text-white font-outfit font-semibold text-lg flex items-center gap-2">
         <span class="w-2 h-2 rounded-full bg-blue-light block" />
-        Projects
+        Projetos que resolvem problemas reais
       </h2>
-      <button class="text-white/70 font-inter text-sm font-medium hover:text-white transition-colors cursor-pointer">
-        View all &gt;
-      </button>
+      <span class="text-white/60 font-inter text-sm">
+        Foco em resultado
+      </span>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
       <template v-for="(projectList, category) in projects" :key="category">
@@ -26,7 +26,7 @@ defineProps<{ projects: Record<string, any[]> }>()
             <div class="w-12 h-12 rounded-2xl bg-blue-light/30 border border-blue-light/50 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
               <span class="text-2xl text-blue-dark">
                 <div v-if="item.icon?.startsWith('i-')" :class="item.icon" />
-                <span v-else>🚀</span>
+                <div v-else class="i-lucide-sparkles" />
               </span>
             </div>
             <div class="flex-1 min-w-0 flex flex-col h-full">
@@ -34,7 +34,13 @@ defineProps<{ projects: Record<string, any[]> }>()
                 <h3 class="font-outfit font-bold text-blue-dark text-[15px] truncate">{{ item.name }}</h3>
                 <span class="text-blue-dark/40 text-[10px] font-bold tracking-widest">{{ item.year || new Date().getFullYear() }}</span>
               </div>
-              <p class="text-blue-dark/70 font-inter text-xs leading-relaxed line-clamp-2 mb-3 flex-1">{{ item.desc }}</p>
+              <div v-if="item.result" class="mb-2">
+                <span class="inline-flex items-center gap-1 px-2 py-1 bg-green-vibrant/20 rounded-lg text-green-dark text-[10px] font-bold uppercase tracking-widest border border-green-vibrant/30">
+                  <div class="i-lucide-circle-dot w-3.5 h-3.5" />
+                  {{ item.result }}
+                </span>
+              </div>
+              <p class="text-blue-dark/70 font-inter text-xs leading-relaxed line-clamp-3 mb-3 flex-1">{{ item.desc }}</p>
               <div class="flex flex-wrap gap-2 mt-auto">
                 <span class="px-2 py-1 bg-green-vibrant/20 rounded-lg text-green-dark text-[10px] font-bold uppercase tracking-widest border border-green-vibrant/30">
                   {{ item.type || 'System' }}

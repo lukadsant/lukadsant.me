@@ -1,16 +1,16 @@
 <script setup lang="ts">
 const contacts = [
-  { href: 'mailto:lukadsant@pm.me', icon: 'i-lucide-mail', label: 'lukadsant@pm.me', sub: 'Email' },
-  { href: undefined, icon: 'i-lucide-map-pin', label: 'Brazil', sub: 'Location' },
-  { href: 'https://github.com/lukadsant', icon: 'i-lucide-github', label: 'lukadsant', sub: 'GitHub' },
+  { href: 'https://wa.me/5581994880289', icon: 'i-lucide-message-circle', label: 'wa.me/5581994880289', sub: 'WhatsApp' },
+  { href: 'mailto:contato@lukadsant.dev', icon: 'i-lucide-mail', label: 'contato@lukadsant.dev', sub: 'Email direto' },
+  { href: undefined, icon: 'i-lucide-map-pin', label: 'Brasil', sub: 'Atendimento remoto' },
 ]
 </script>
 
 <template>
-  <section class="px-6 pb-20">
+  <section id="contact" class="px-6 pb-20">
     <h2 class="text-white font-outfit font-semibold text-lg mb-5 flex items-center gap-2">
       <span class="w-2 h-2 rounded-full bg-blue-light block" />
-      Contact
+      Contato
     </h2>
     <div class="flex flex-col gap-4">
       <a
