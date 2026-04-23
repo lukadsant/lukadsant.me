@@ -57,7 +57,7 @@ Geralmente são os bolsos da CPU. Pela analogia, podemos imaginar que essa memó
 
 - A _memória secundária_ também é usada para armazenar informações, mas é muito mais lenta que a memória principal. A vantagem da memória secundária é que ela pode armazenar informações mesmo quando não há energia no computador. Exemplos de memória secundária são unidades de disco ou memória flash (normalmente encontradas em pen drives e reprodutores de música portáteis).
 
-![Processador indo buscar informações nos buracos das árvores (memórias secundárias).](https://birdhousesupply.com/wp-content/uploads/images/products/p-8225-woodlink-heritage-farms-the-magnent-squirrel-resistant-bird-feeder-falling__70105.1484100494.1280.1280.jpg)
+![Processador indo buscar informações nos buracos das árvores (memórias secundárias).](https://c7.alamy.com/comp/2T1BX46/eurasian-red-squirrel-sciurus-vulgaris-cautiously-peeks-out-of-the-hole-in-a-tree-in-the-forest-of-drunen-noord-brabant-in-the-netherlands-2T1BX46.jpg)
 
 Processador indo buscar informações nos buracos das árvores (memórias secundárias).
 

@@ -7,8 +7,6 @@ duration: 10min
 
 ## Cap 2 - O Intérprete: Nosso soldado romano
 
-Agora chegou a hora de apresentar nosso segundo personagem: o **intérprete Python**, nosso leal **soldado romano**.
-
 ### O problema: O esquilo não fala nossa língua
 
 Lembra do esquilo? Ele é extrordinariamente rápido (3 bilhões de operações por segundo!), mas tem um problema: **ele só entende uma língua muito estranha chamada linguagem de máquina**. Essa linguagem é feita apenas de zeros e uns:
@@ -22,12 +20,11 @@ Soa como algo alienígena, não é? E aqui está o verdadeiro desafio: você que
 ### A solução: O soldado romano
 
 É aí que entra nosso herói: o **intérprete Python** — ou, como vamos imaginá-lo, um **soldado romano bem treinado**.
-
-![Tá aí o nosso poderoso intérprete, um soldado romano](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8465e1c-2fe9-42c4-8fc1-c3d317fd19bc/ac0708b2-bd41-4f54-9a2e-6a93000eb66c/Untitled.png)
+![Tá aí o nosso poderoso intérprete, um soldado romano](https://static.wikia.nocookie.net/natm/images/2/2f/Octavius_about_to_go_into_a_vending_machine.png)
 
 O trabalho do soldado romano é ser um **tradutor**. Ele entende duas línguas:
 
-- **Português/Python** (a linguagem que você fala)
+- **Python** (a linguagem que se asemelha a sua nativa)
 - **Linguagem de máquina** (a linguagem que o esquilo fala)
 
 Quando você dá uma ordem em Python, o soldado romano lê sua instrução, compreende o que você quer, e então traduz tudo para zeros e uns que o esquilo consegue entender. Depois, ele monta no esquilo e coordena a execução da tarefa.
@@ -72,8 +69,6 @@ assert    del       global      not       with
 async     elif      if          or        yield
 ```
 
-**Observação especial:** `print` não é uma palavra reservada no Python 3 — é uma _função embutida_ (`built-in function`). É como uma palavra extra que o soldado romano sempre carrega no bolso.
-
 ## Nosso primeiro comando: `print()`
 
 Agora vamos aprender a "falar" com o intérprete. O primeiro e mais importante comando é `print()`, que significa "escreva na tela".
@@ -90,7 +85,7 @@ print('Hello world')
 
 Ele vai ler sua mensagem entre aspas e passar a instrução para o esquilo, que instantaneamente a executará.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8465e1c-2fe9-42c4-8fc1-c3d317fd19bc/656353b0-5d3f-4207-8a11-d0d5fb036d1c/Untitled.png)
+![Tá aí o nosso poderoso intérprete, um soldado romano](https://i.ebayimg.com/images/g/zWwAAOSwvBdkuWu4/s-l960.webp)
 
 (Imagem de um soldado romano montado em um esquilo)
 
