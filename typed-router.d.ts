@@ -93,6 +93,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/refreshed-nuxt-eslint': RouteRecordInfo<'/posts/refreshed-nuxt-eslint', '/posts/refreshed-nuxt-eslint', Record<never, never>, Record<never, never>>,
     '/posts/reimagine-atomic-css': RouteRecordInfo<'/posts/reimagine-atomic-css', '/posts/reimagine-atomic-css', Record<never, never>, Record<never, never>>,
     '/posts/reimagine-atomic-css-zh': RouteRecordInfo<'/posts/reimagine-atomic-css-zh', '/posts/reimagine-atomic-css-zh', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody', '/posts/resumo-ludico-python-for-everybody', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-1': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-1', '/posts/resumo-ludico-python-for-everybody-cap-1', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-2': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-2', '/posts/resumo-ludico-python-for-everybody-cap-2', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-3': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-3', '/posts/resumo-ludico-python-for-everybody-cap-3', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-4': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-4', '/posts/resumo-ludico-python-for-everybody-cap-4', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-5': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-5', '/posts/resumo-ludico-python-for-everybody-cap-5', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-6': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-6', '/posts/resumo-ludico-python-for-everybody-cap-6', Record<never, never>, Record<never, never>>,
     '/posts/rewrite-in-vite': RouteRecordInfo<'/posts/rewrite-in-vite', '/posts/rewrite-in-vite', Record<never, never>, Record<never, never>>,
     '/posts/roads-to-oss-progressive-vueams-2024': RouteRecordInfo<'/posts/roads-to-oss-progressive-vueams-2024', '/posts/roads-to-oss-progressive-vueams-2024', Record<never, never>, Record<never, never>>,
     '/posts/roads-to-oss-set-theory-react-paris-2024': RouteRecordInfo<'/posts/roads-to-oss-set-theory-react-paris-2024', '/posts/roads-to-oss-set-theory-react-paris-2024', Record<never, never>, Record<never, never>>,
@@ -432,6 +439,34 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/posts/reimagine-atomic-css-zh.md': {
       routes: '/posts/reimagine-atomic-css-zh'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-1.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-1'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-2.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-2'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-3.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-3'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-4.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-4'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-5.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-5'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-6.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-6'
       views: never
     }
     'pages/posts/rewrite-in-vite.md': {
