@@ -284,7 +284,7 @@ function handleDesignClick(event: MouseEvent) {
       <!-- Content -->
       <div class="mt-8 md:mt-16 relative z-20">
         <h1 class="font-outfit font-black text-5xl md:text-8xl uppercase text-white tracking-tighter leading-[0.9] w-[65%] md:w-[70%] drop-shadow-sm">
-          Luka D'Sant
+          Luka D'Sant.dev
         </h1>
         <p class="text-white/90 font-inter font-medium mt-3 md:mt-6 text-[15px] md:text-xl">
           Crio sites e sistemas simples para organizar seu negócio e economizar tempo.

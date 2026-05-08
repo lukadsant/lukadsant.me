@@ -5,30 +5,33 @@ const offers = [
     price: 'A partir de R$500',
     priceNote: '(ou orçamento personalizado)',
     description: 'Página profissional, portfólio ou site institucional com uma entrega direta e fácil de aprovar.',
-    items: ['Landing page', 'Carrd ou portfólio', 'Página profissional'],
+    items: ['Landing page', 'Portfólio', 'Página profissional'],
     included: ['Até 5 páginas', 'Design profissional', 'Responsivo (mobile + desktop)', '2 rodadas de revisão', 'Entrega em 2-3 semanas', 'Suporte após entrega'],
     icon: 'i-lucide-layout-template',
     cta: 'Quero meu site pronto',
+    badge: 'Ideal para começar',
   },
   {
     title: 'Sistema simples',
     price: 'A partir de R$1.500',
     priceNote: '(ou orçamento personalizado)',
     description: 'Painel administrativo, gestão de dados e relatórios para tirar seu processo da planilha e organizar a operação.',
-    items: ['CRUD', 'Painel administrativo', 'API básica'],
+    items: ['Cadastro de dados', 'Painel administrativo', 'Relatórios'],
     included: ['Fluxo principal mapeado', 'Painel administrativo', 'Cadastro e edição de dados', '2 rodadas de revisão', 'Entrega em 3-5 semanas', 'Suporte após entrega'],
     icon: 'i-lucide-layout-panel-left',
     cta: 'Quero organizar meu negócio',
+    badge: 'Mais popular',
   },
   {
     title: 'Automação',
     price: 'A partir de R$2.000',
     priceNote: '(ou orçamento personalizado)',
-    description: 'Scripts, coleta de dados e integrações que reduzem trabalho manual e deixam sua rotina mais leve.',
+    description: 'Conectar seus sistemas para trabalharem sozinhos: envios automáticos de mensagens e e-mails, organização de dados, sincronização entre plataformas. Menos tarefas repetitivas, mais tempo pro que importa.',
     items: ['Scripts', 'Integrações', 'Coleta de dados'],
     included: ['Mapeamento do processo', 'Integração entre ferramentas', 'Automação da tarefa principal', '2 rodadas de ajuste', 'Entrega em 2-4 semanas', 'Suporte após entrega'],
     icon: 'i-lucide-bot',
     cta: 'Quero economizar tempo',
+    badge: 'Maior impacto',
   },
 ]
 </script>
@@ -49,7 +52,7 @@ const offers = [
       <article
         v-for="offer in offers"
         :key="offer.title"
-        class="bg-neutral-soft rounded-3xl p-5 border border-neutral-light shadow-sm"
+        class="bg-neutral-soft rounded-3xl p-5 border border-neutral-light shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-lg flex flex-col justify-between"
       >
         <div class="w-12 h-12 rounded-2xl bg-blue-light/30 border border-blue-light/50 flex items-center justify-center mb-4">
           <div :class="offer.icon" class="w-6 h-6 text-blue-dark" />
@@ -60,7 +63,7 @@ const offers = [
             {{ offer.title }}
           </h3>
           <span class="text-[10px] uppercase tracking-widest font-bold text-green-dark bg-green-vibrant/20 border border-green-vibrant/30 rounded-lg px-2 py-1">
-            Ideal para começar
+            {{ offer.badge }}
           </span>
         </div>
 
@@ -91,7 +94,7 @@ const offers = [
           </div>
         </div>
 
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2 mb-5">
           <span
             v-for="item in offer.items"
             :key="item"
@@ -105,7 +108,7 @@ const offers = [
           href="https://wa.me/5581994880289"
           target="_blank"
           rel="noopener noreferrer"
-          class="mt-5 inline-flex items-center gap-2 bg-green-vibrant hover:bg-green-vibrant/90 text-blue-dark font-outfit font-bold text-xs uppercase tracking-wide px-4 py-3 rounded-xl transition-colors"
+          class="inline-flex items-center gap-2 bg-green-vibrant hover:bg-green-vibrant/90 text-blue-dark font-outfit font-bold text-xs uppercase tracking-wide px-4 py-3 rounded-xl transition-colors"
         >
           {{ offer.cta }}
           <div class="i-lucide-arrow-up-right w-4 h-4" />

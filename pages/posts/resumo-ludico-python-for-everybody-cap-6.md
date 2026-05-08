@@ -346,3 +346,4 @@ Com o que você aprendeu, você já consegue criar programas sérios que **salva
 
 [Voltar ao índice](./resumo-ludico-python-for-everybody)
 [Anterior: Cap 5](./resumo-ludico-python-for-everybody-cap-5)
+[Próximo: Cap 7](./resumo-ludico-python-for-everybody-cap-7)

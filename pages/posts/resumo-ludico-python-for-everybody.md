@@ -45,3 +45,4 @@ Se quiser seguir em ordem, a trilha está separada em páginas:
 - [Cap 4 - Condições e decisões](./resumo-ludico-python-for-everybody-cap-4)
 - [Cap 5 - Loops e repetição](./resumo-ludico-python-for-everybody-cap-5)
 - [Cap 6 - Funções e modularização](./resumo-ludico-python-for-everybody-cap-6)
+- [Cap 7 - Listas](./resumo-ludico-python-for-everybody-cap-7)

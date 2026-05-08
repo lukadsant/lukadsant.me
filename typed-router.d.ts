@@ -100,6 +100,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/resumo-ludico-python-for-everybody-cap-4': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-4', '/posts/resumo-ludico-python-for-everybody-cap-4', Record<never, never>, Record<never, never>>,
     '/posts/resumo-ludico-python-for-everybody-cap-5': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-5', '/posts/resumo-ludico-python-for-everybody-cap-5', Record<never, never>, Record<never, never>>,
     '/posts/resumo-ludico-python-for-everybody-cap-6': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-6', '/posts/resumo-ludico-python-for-everybody-cap-6', Record<never, never>, Record<never, never>>,
+    '/posts/resumo-ludico-python-for-everybody-cap-7': RouteRecordInfo<'/posts/resumo-ludico-python-for-everybody-cap-7', '/posts/resumo-ludico-python-for-everybody-cap-7', Record<never, never>, Record<never, never>>,
     '/posts/rewrite-in-vite': RouteRecordInfo<'/posts/rewrite-in-vite', '/posts/rewrite-in-vite', Record<never, never>, Record<never, never>>,
     '/posts/roads-to-oss-progressive-vueams-2024': RouteRecordInfo<'/posts/roads-to-oss-progressive-vueams-2024', '/posts/roads-to-oss-progressive-vueams-2024', Record<never, never>, Record<never, never>>,
     '/posts/roads-to-oss-set-theory-react-paris-2024': RouteRecordInfo<'/posts/roads-to-oss-set-theory-react-paris-2024', '/posts/roads-to-oss-set-theory-react-paris-2024', Record<never, never>, Record<never, never>>,
@@ -467,6 +468,10 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/posts/resumo-ludico-python-for-everybody-cap-6.md': {
       routes: '/posts/resumo-ludico-python-for-everybody-cap-6'
+      views: never
+    }
+    'pages/posts/resumo-ludico-python-for-everybody-cap-7.md': {
+      routes: '/posts/resumo-ludico-python-for-everybody-cap-7'
       views: never
     }
     'pages/posts/rewrite-in-vite.md': {

@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const trustItems = [
   'Atendimento simples e direto',
-  'Explico tudo de forma clara',
+  'Explicação de forma clara',
   'Entregas rápidas',
   'Suporte após a entrega',
-  'Sem complicação técnica',
+  'Processo descomplicado',
 ]
 </script>
 
