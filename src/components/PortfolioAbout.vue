@@ -1,0 +1,78 @@
+<template>
+  <section class="mb-10 px-6">
+    <div class="max-w-5xl">
+      <h2 class="text-white font-outfit font-semibold text-2xl flex items-center gap-2 mb-8">
+        Sobre mim
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-white/85 font-inter text-sm md:text-base leading-relaxed">
+            Sou dev fullstack com formação em design (Escola SAGA, animação e VFX).
+          </p>
+
+          <p class="text-white/65 font-inter text-sm leading-relaxed mt-5">
+            Essa combinação rara significa que:
+          </p>
+          <ul class="mt-2 space-y-2">
+            <li class="flex items-start gap-2 font-inter text-sm text-white/65 leading-relaxed">
+              <span class="text-green-vibrant font-bold mt-0.5">-</span>
+              <span>Entendo de código profundo (Go, Python, distributed systems).</span>
+            </li>
+            <li class="flex items-start gap-2 font-inter text-sm text-white/65 leading-relaxed">
+              <span class="text-green-vibrant font-bold mt-0.5">-</span>
+              <span>Entendo de usuário (design não é cosmético, é arquitetura de experiência).</span>
+            </li>
+            <li class="flex items-start gap-2 font-inter text-sm text-white/65 leading-relaxed">
+              <span class="text-green-vibrant font-bold mt-0.5">-</span>
+              <span>Entendo de negócio (trabalhei em ENGECONSULT automatizando processos reais).</span>
+            </li>
+          </ul>
+
+          <p class="text-white/65 font-inter text-sm leading-relaxed mt-5">
+            Trabalho com sistemas AI (RAG, LLMs), automação complexa (ETL, pipelines) e código que precisa escalar e ser mantido por 5+ anos.
+          </p>
+
+          <p class="text-white/65 font-inter text-sm leading-relaxed mt-5">
+            Passo meu tempo pensando em decisões arquiteturais, tradeoffs de tecnologia e como transformar ideias confusas em sistemas elegantes.
+          </p>
+
+          <p class="text-white/65 font-inter text-sm leading-relaxed mt-5 italic border-l-2 border-white/20 pl-4 py-1">
+            No meu tempo livre: exploro história de early gaming e CRT hardware, para entender como construir sistemas interativos desde os primeiros princípios.
+          </p>
+
+          <a
+            href="mailto:contato@lukadsant.dev"
+            class="inline-flex items-center gap-2 mt-8 text-green-vibrant font-outfit font-bold text-sm uppercase tracking-wide hover:text-white transition-colors"
+          >
+            Estou aberto a projetos onde posso aprender algo novo
+            <div class="i-lucide-arrow-right w-4 h-4" />
+          </a>
+        </div>
+
+        <div class="relative flex justify-center items-end h-80">
+          <div class="relative w-64 h-64">
+            <div class="absolute -inset-2 bg-gradient-to-br from-green-vibrant/20 to-blue-light/20 rounded-3xl blur-lg opacity-60" />
+            <div class="relative w-full h-full bg-gradient-to-br from-blue-light/30 to-green-vibrant/10 border-4 border-neutral-light rounded-3xl p-2 shadow-2xl overflow-hidden">
+              <img
+                src="/avatar.png"
+                alt="Luka"
+                class="w-[19rem] h-[19rem] object-cover translate-x-[-0.5rem] translate-y-[-3.9rem] transform scale-110"
+              >
+            </div>
+
+            <!-- Ícone decorativo - CPU -->
+            <div class="absolute -top-4 -left-4 w-12 h-12 bg-green-vibrant rounded-2xl border-3 border-blue-dark p-2 flex items-center justify-center shadow-lg">
+              <div class="i-lucide-cpu w-6 h-6 text-blue-dark" />
+            </div>
+
+            <!-- Ícone decorativo - código -->
+            <div class="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-light rounded-full border-3 border-blue-dark p-2 flex items-center justify-center shadow-lg">
+              <div class="i-lucide-code w-6 h-6 text-blue-dark" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

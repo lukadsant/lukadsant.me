@@ -26,6 +26,7 @@ declare module 'vue-router/auto-routes' {
     '/chat-zh': RouteRecordInfo<'/chat-zh', '/chat-zh', Record<never, never>, Record<never, never>>,
     '/collective-sponsor-onetime': RouteRecordInfo<'/collective-sponsor-onetime', '/collective-sponsor-onetime', Record<never, never>, Record<never, never>>,
     '/demos': RouteRecordInfo<'/demos', '/demos', Record<never, never>, Record<never, never>>,
+    '/freelancer': RouteRecordInfo<'/freelancer', '/freelancer', Record<never, never>, Record<never, never>>,
     '/giving-talks': RouteRecordInfo<'/giving-talks', '/giving-talks', Record<never, never>, Record<never, never>>,
     '/media': RouteRecordInfo<'/media', '/media', Record<never, never>, Record<never, never>>,
     '/notes': RouteRecordInfo<'/notes', '/notes', Record<never, never>, Record<never, never>>,
@@ -172,6 +173,10 @@ declare module 'vue-router/auto-routes' {
     }
     'pages/demos.md': {
       routes: '/demos'
+      views: never
+    }
+    'pages/freelancer.md': {
+      routes: '/freelancer'
       views: never
     }
     'pages/giving-talks.md': {
