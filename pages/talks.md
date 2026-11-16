@@ -15,18 +15,30 @@ art: plum
 
 <div pt-5 />
 
-### Agenda de apresentrações 2025
+### Agenda de apresentações 2026
 
-| Data                          | Conferência                               | Local     | Tópico          | Idioma    |
-| ----------------------------- | ----------------------------------------- | --------- | --------------- | --------- |
-| <TalkDate date="2025-10-22"/> | [**CONIC/UFPE**](https://vuefes.jp/2025/) | RECIFE/PE | EXPOSIÇÃO/PIBIC | PORTUGUÊS |
-| <TalkDate date="2025-11-14"/> | [**V DEVIR**](https://vuefes.jp/2025/)    | RECIFE/PE | EXPOSIÇÃO       | PORTUGUÊS |
-| <TalkDate date="2025-12-12"/> | [**TCC**](https://vuefes.jp/2025/)        | RECIFE/PE | SEMINÁRIO       | PORTUGUÊS |
+| Data                          | Conferência               | Local            | Tópico    | Idioma    |
+| ----------------------------- | ------------------------- | ---------------- | --------- | --------- |
+| <TalkDate date="2026-05-06"/> | **VI SEMINARIO DO DEVIR** | RECIFE/PE        | -         | PORTUGUÊS |
+| <TalkDate date="2026-07-08"/> | **TCC**                   | ONLINE           | SEMINÁRIO | PORTUGUÊS |
+| <TalkDate date="2026-09-08"/> | **XI CIRKULA**            | RECIFE (HÍBRIDO) | -         | PORTUGUÊS |
 
 <div pt-5 />
 
 <details>
-<summary><span text-lg>Agenda de apresentrações 2024</span></summary>
+<summary><span text-lg>Agenda de apresentações 2025</span></summary>
+
+| Data                          | Conferência    | Local     | Tópico          | Idioma    |
+| ----------------------------- | -------------- | --------- | --------------- | --------- |
+| <TalkDate date="2025-10-22"/> | **CONIC/UFPE** | RECIFE/PE | EXPOSIÇÃO/PIBIC | PORTUGUÊS |
+| <TalkDate date="2025-11-14"/> | **V DEVIR**    | RECIFE/PE | EXPOSIÇÃO       | PORTUGUÊS |
+
+</details>
+
+<div pt-5 />
+
+<details>
+<summary><span text-lg>Agenda de apresentações 2024</span></summary>
 
 | Data                          | Conferência                                                                              | Local     | Tópico                                                   |
 | ----------------------------- | ---------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------- |

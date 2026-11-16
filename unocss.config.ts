@@ -1,7 +1,4 @@
 import {
-  createLocalFontProcessor,
-} from '@unocss/preset-web-fonts/local'
-import {
   defineConfig,
   presetAttributify,
   presetIcons,
@@ -42,7 +39,7 @@ export default defineConfig({
         condensed: 'Roboto Condensed',
         wisper: 'Bad Script',
       },
-      processors: createLocalFontProcessor(),
+      // processors: createLocalFontProcessor(),
     }),
   ],
   transformers: [
