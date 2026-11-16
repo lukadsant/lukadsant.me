@@ -95,10 +95,30 @@ const experiences = [
 ]
 
 const formations = [
-  { title: 'Ciências Sociais', subtitle: 'Bacharelado', institution: 'UFPE', year: 'ago 2021 – ago 2026' },
-  { title: 'Gestão de Projetos no Serviço Público', subtitle: 'Formação Complementar', institution: 'FUNDAJ', year: 'out–nov 2025' },
-  { title: 'Análise de Dados', subtitle: 'IBM SPSS, Power BI', institution: 'Autoformação', year: 'desde mar 2023' },
-  { title: 'Informática e Gestão', subtitle: 'Formação Complementar', institution: 'Neo Multicursos', year: 'jan 2016 – jan 2017' },
+  {
+    title: 'Ciências Sociais',
+    subtitle: 'Bacharelado',
+    institution: 'UFPE',
+    badge: 'UFPE',
+    year: '2021 – 2026',
+    desc: 'Formação sólida em pesquisa social, métodos qualitativos e quantitativos, análise antropológica e teoria social.',
+  },
+  {
+    title: 'Gestão de Projetos no Serviço Público',
+    subtitle: 'Formação Complementar',
+    institution: 'FUNDAJ',
+    badge: 'FUNDAJ',
+    year: 'out–nov 2025',
+    desc: 'Metodologias de planejamento, monitoramento de indicadores e gestão estratégica orientada a entregas públicas.',
+  },
+  {
+    title: 'Informática e Gestão',
+    subtitle: 'Formação Complementar',
+    institution: 'Neo Multicursos',
+    badge: 'NEO',
+    year: '2016 – 2017',
+    desc: 'Capacitação prática em ferramentas de produtividade, planilhas gerenciais e rotinas administrativas.',
+  },
 ]
 
 const habilidadesRef = ref(null)
@@ -349,27 +369,41 @@ const skills = [
           </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div v-for="(form, i) in formations" :key="i" class="bg-gray-800 rounded-3xl overflow-hidden shadow-lg border border-gray-700 flex flex-col group hover:border-gray-500 transition-colors">
-            <div class="h-40 bg-gray-700 relative overflow-hidden">
-              <div class="absolute inset-0 opacity-30 group-hover:scale-110 transition-transform duration-700" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 20px 20px;" />
-              <div class="absolute inset-0 bg-gradient-to-t from-gray-800 to-transparent" />
-            </div>
-            <div class="p-8 flex-1 flex flex-col relative -mt-10">
-              <div class="w-12 h-12 bg-white text-gray-900 rounded-xl flex items-center justify-center font-black text-xl mb-6 shadow-md">
-                {{ form.institution.charAt(0) }}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            v-for="(form, i) in formations"
+            :key="i"
+            class="bg-gray-800/90 rounded-3xl overflow-hidden shadow-xl border border-gray-700/80 flex flex-col group hover:border-gray-500 hover:-translate-y-1.5 transition-all duration-300"
+          >
+            <!-- CardHeader -->
+            <div class="p-6 border-b border-gray-700/70 bg-gray-800/60 relative overflow-hidden">
+              <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 14px 14px;" />
+              <div class="relative z-10 flex items-center justify-between mb-3">
+                <div class="px-2.5 py-1 rounded-lg bg-white text-gray-950 font-black text-xs tracking-wider shadow-sm">
+                  {{ form.badge }}
+                </div>
+                <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-gray-700 text-gray-300 border border-gray-600/60">
+                  {{ form.year }}
+                </span>
               </div>
-              <div class="text-xs font-bold uppercase tracking-wider text-gray-400 mb-2">
-                {{ form.institution }}
-              </div>
-              <h3 class="text-2xl font-bold text-white mb-2">
-                {{ form.title }}
-              </h3>
-              <p class="text-gray-400 mb-8">
+              <div class="relative z-10 text-xs font-bold uppercase tracking-wider text-blue-400">
                 {{ form.subtitle }}
-              </p>
-              <div class="mt-auto text-sm font-bold text-white bg-gray-700/50 inline-block px-4 py-2 rounded-lg self-start">
-                {{ form.year }}
+              </div>
+            </div>
+
+            <!-- CardContent -->
+            <div class="p-6 flex-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-xl font-bold text-white mb-3 leading-snug group-hover:text-blue-200 transition-colors">
+                  {{ form.title }}
+                </h3>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                  {{ form.desc }}
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t border-gray-700/40 text-xs font-semibold text-gray-500 flex items-center gap-1.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-green-500" />
+                <span>{{ form.institution }}</span>
               </div>
             </div>
           </div>
